@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="666.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.Controller_Visuel_Stock">
+   <children>
+      <TableView fx:id="VisualisationStock" layoutX="12.0" layoutY="46.0" prefHeight="445.0" prefWidth="1129.0" styleClass="table-row-cell" stylesheets="@../CSSstyling/Style.css" />
+      <JFXTextField fx:id="ISBNAjout" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="168.0" layoutY="540.0" prefHeight="26.0" prefWidth="315.0" promptText="ISBN" unFocusColor="#ffc619">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="QteAjouter" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="516.0" layoutY="540.0" prefHeight="26.0" prefWidth="103.0" promptText="Quantité" unFocusColor="#ffc619">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton focusTraversable="false" layoutX="640.0" layoutY="537.0" onAction="#AjouterStockButton" prefHeight="33.0" prefWidth="218.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Ajouter Un Titre Au Stock" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton focusTraversable="false" layoutX="439.0" layoutY="590.0" onAction="#Supprimer_Selection" prefHeight="33.0" prefWidth="218.0" ripplerFill="#4d4949" style="-fx-background-color: #ff3f3c;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Supprimer la séléction" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

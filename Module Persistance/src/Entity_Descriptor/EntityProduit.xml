@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityProduit">
+        <table name="PRODUIT" schema="CADOC_ADMIN" catalog=""/>
+        <attributes>
+            <id name="isbn">
+                <column name="ISBN" length="15"/>
+            </id>
+            <basic name="titre">
+                <column name="TITRE" nullable="false" length="2000"/>
+            </basic>
+            <basic name="auteur">
+                <column name="AUTEUR" nullable="false" length="1000"/>
+            </basic>
+            <basic name="editeur">
+                <column name="EDITEUR" nullable="false" length="1000"/>
+            </basic>
+            <basic name="resume">
+                <column name="RESUME" nullable="false" length="3800"/>
+            </basic>
+            <basic name="dateP">
+                <column name="DATE_P" nullable="false" length="1000"/>
+            </basic>
+            <basic name="prixHt">
+                <column name="PRIX_HT" nullable="false" precision="2147483646"/>
+            </basic>
+            <basic name="prixTtc">
+                <column name="PRIX_TTC" nullable="false" precision="2147483646"/>
+            </basic>
+            <basic name="domaine">
+                <column name="DOMAINE" nullable="false" length="2000"/>
+            </basic>
+            <basic name="domaine2">
+                <column name="DOMAINE2" nullable="false" length="2000"/>
+            </basic>
+            <basic name="domaine3">
+                <column name="DOMAINE3" nullable="false" length="2000"/>
+            </basic>
+            <basic name="theme">
+                <column name="THEME" nullable="false" length="1000"/>
+            </basic>
+            <basic name="dewey">
+                <column name="DEWEY" nullable="false" length="80"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

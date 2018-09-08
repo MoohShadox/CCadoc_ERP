@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSSstyling/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.Verification_Panel_Controller">
+   <children>
+      <Pane prefHeight="36.0" prefWidth="956.0" style="-fx-background-color: FFC619;">
+         <children>
+            <Label layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Vérification D'Un Stock Par Un Inventaire" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="5.0">
+               <image>
+                  <Image url="@../Assets/Logo.gif" />
+               </image>
+            </ImageView>
+            <HBox layoutX="864.0" prefHeight="37.0" prefWidth="92.0">
+               <children>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#Iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../Assets/Line'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@../Assets/close'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label text="Comparaison entre les deux recensements : " textFill="#635e5e">
+         <VBox.margin>
+            <Insets left="10.0" top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TableComparaison" prefHeight="472.0" prefWidth="931.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </VBox.margin></TableView>
+   </children>
+</VBox>

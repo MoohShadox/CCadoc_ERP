@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityContact">
+        <table name="CONTACT" schema="CADOC_ADMIN" catalog=""/>
+        <attributes>
+            <id name="numc">
+                <column name="NUMC" precision="2147483646"/>
+            </id>
+            <basic name="denomination">
+                <column name="DENOMINATION" nullable="false" length="25"/>
+            </basic>
+            <basic name="adresse">
+                <column name="ADRESSE" nullable="false" length="25"/>
+            </basic>
+            <basic name="type">
+                <column name="TYPE" nullable="false" length="25"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

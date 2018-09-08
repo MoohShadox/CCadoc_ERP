@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityEstFactureDans">
+        <table name="EST_FACTURE_DANS" schema="CADOC_ADMIN" catalog=""/>
+        <id-class class="Database_Entity.EntityEstFactureDansPK"/>
+        <attributes>
+            <id name="isbn">
+                <column name="ISBN" length="15"/>
+            </id>
+            <id name="reference">
+                <column name="REFERENCE" precision="10"/>
+            </id>
+            <id name="nomS">
+                <column name="NOM_S" length="25"/>
+            </id>
+            <basic name="quantite">
+                <column name="QUANTITE" nullable="false" precision="10"/>
+            </basic>
+            <basic name="prixUnitaire">
+                <column name="PRIX_UNITAIRE" nullable="false" precision="19"/>
+            </basic>
+            <basic name="unite">
+                <column name="UNITE" nullable="false" length="25"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

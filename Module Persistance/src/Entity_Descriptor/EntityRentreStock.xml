@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityRentreStock">
+        <table name="RENTRE_STOCK" schema="CADOC_ADMIN" catalog=""/>
+        <id-class class="Database_Entity.EntityRentreStockPK"/>
+        <attributes>
+            <id name="isbn">
+                <column name="ISBN" length="15"/>
+            </id>
+            <id name="nomS">
+                <column name="NOM_S" length="25"/>
+            </id>
+            <id name="dateSysteme">
+                <column name="DATE_SYSTEME" precision="-1"/>
+            </id>
+            <basic name="quantite">
+                <column name="QUANTITE" nullable="false" precision="10"/>
+            </basic>
+            <basic name="unite">
+                <column name="UNITE" nullable="false" length="25"/>
+            </basic>
+            <basic name="prixAchat">
+                <column name="PRIX_ACHAT" nullable="false" precision="3"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cadoc_ERP.iml" filepath="$PROJECT_DIR$/Cadoc_ERP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module Gestion Inventaire/Module Gestion Inventaire.iml" filepath="$PROJECT_DIR$/Module Gestion Inventaire/Module Gestion Inventaire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module Persistance/Module Persistance.iml" filepath="$PROJECT_DIR$/Module Persistance/Module Persistance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module Python/Module Python.iml" filepath="$PROJECT_DIR$/Module Python/Module Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Outils_Conception/Outils_Conception.iml" filepath="$PROJECT_DIR$/Outils_Conception/Outils_Conception.iml" />
+    </modules>
+  </component>
+</project>
