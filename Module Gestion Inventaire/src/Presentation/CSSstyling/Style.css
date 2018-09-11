@@ -66,6 +66,8 @@
     -fx-border-color: #9E9E9E;
 }
 
+.table-row-cell:selected { -fx-background-color: #FFFF8D; }
+
 .table-view *.scroll-bar:horizontal *.increment-button,
 .table-view *.scroll-bar:horizontal *.decrement-button {
     -fx-background-color: null;

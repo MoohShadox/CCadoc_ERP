@@ -109,7 +109,6 @@ public class Gestion_Stock extends Controlleur_Visualisable<Livre> {
                         }
                         try {
                             PS.setScene(scene);
-
                         }catch(Exception e){
                             System.out.println(e.getMessage());
                         }
@@ -229,6 +228,7 @@ public class Gestion_Stock extends Controlleur_Visualisable<Livre> {
     private void fermerFenetre() {
         //this.fermerFenetre(VisualisationStock);
     }
+
     @FXML
     private void Iconify() {
         //this.Iconify(VisualisationStock);

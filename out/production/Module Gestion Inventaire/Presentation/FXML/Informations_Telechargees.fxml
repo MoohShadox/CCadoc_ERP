@@ -13,7 +13,7 @@
 
 <Pane fx:id="backgroundPane" prefHeight="666.0" prefWidth="1097.0" style="-fx-background-color: transparent;" stylesheets="@../CSSstyling/Style2.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.Informations_Telechargees_Controller">
     <children>
-        <Pane fx:id="pane" layoutY="36.0" prefHeight="440.0" prefWidth="1097.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 0px 5px 5px 5px;" stylesheets="@../CSSstyling/Style2.css">
+        <Pane fx:id="pane" layoutY="36.0" prefHeight="444.0" prefWidth="1097.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 0px 5px 5px 5px;" stylesheets="@../CSSstyling/Style2.css">
             <children>
                 <TableView fx:id="InformationTable" editable="true" layoutX="30.0" layoutY="55.0" prefHeight="82.0" prefWidth="866.0">
               <columns>
