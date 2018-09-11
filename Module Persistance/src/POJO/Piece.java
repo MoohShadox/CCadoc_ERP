@@ -1,11 +1,17 @@
 package POJO;
 
+import Exceptions.BuildingException;
+import Interfaces.DAOAble;
+import Interfaces.Modele;
+import Interfaces.Visualisable;
+
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Piece {
+public class Piece implements Visualisable, DAOAble<Piece> {
     //Element de la pièce
-    LinkedList <Livre> contenu = new LinkedList <> ( );
+    HashMap<Livre,Integer> contenu = new HashMap();
     private String reference;
     private Date DateF;
     private Types_Pieces typesPiece;
@@ -15,91 +21,48 @@ public class Piece {
     private Client numClientConcerne; //le numéro du client est suffisant *** A REVOIR
     private Employe employe; //le numéro d l'employé suffit *** A REVOIR
 
-    public boolean isRempli() {
-        return rempli;
+    //Définition des méthodes abstraites
+
+    @Override
+    public boolean equals(Object obj) {
+        Piece p=(Piece)obj;
+        return this.reference.equals(p.reference);
     }
 
-    public void setRempli(boolean rempli) {
-        this.rempli = rempli;
+    @Override
+    public Piece buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
+        return null;
     }
 
-    public Client getNumClientConcerne() {
-        return numClientConcerne;
+
+    @Override
+    public HashMap<String, String> getRepositoryAttributs() throws IllegalAccessException {
+        HashMap<String,String> H = new HashMap<>();
+        H.put()
+        return null;
     }
 
-    public void setNumClientConcerne(Client numClientConcerne) {
-        this.numClientConcerne = numClientConcerne;
-    }
-
-    public Date getDateF() {
-        return DateF;
-    }
-
-    public void setDateF(Date dateF) {
-        DateF = dateF;
-    }
-
-    public Date getDelai() {
-        return delai;
-    }
-
-    public void setDelai(Date delai) {
-        this.delai = delai;
-    }
-
-    public Employe getEmploye() {
-        return employe;
-    }
-
-    public void setEmploye(Employe employe) {
-        this.employe = employe;
+    @Override
+    public String getTableName() {
+        return "PIECE";
     }
 
     public String getReference() {
         return reference;
     }
 
-    public void setReference(String reference) {
-        this.reference = reference;
-    }
-
-    public Type_Transaction getTypeTransaction() {
-        return typeTransaction;
-    }
-
-    public void setTypeTransaction(String typeTransaction) {
-        this.typeTransaction = Type_Transaction.valueOf(typeTransaction.toLowerCase());
-    }
-
-    public Types_Pieces getTypesPiece() {
-        return typesPiece;
-    }
-
-    public void setTypesPiece(String typesPiece) {
-        this.typesPiece = Types_Pieces.valueOf(typesPiece.toLowerCase());
-    }
-
-    public LinkedList<Livre> getContenu() {
-        return contenu;
-    }
-
-    public void setContenu(LinkedList<Livre> contenu) {
-        this.contenu = contenu;
-    }
-
-    public void addLivre(Livre l){
-        if(!contenu.contains(l))
-            contenu.add(l);
-    }
-
-    public void removeLivre(Livre l){
-        if(!contenu.contains(l))
-            contenu.remove(l);
+    @Override
+    public String getKeyName() {
+        return "REFERENCE";
     }
 
     @Override
-    public boolean equals(Object obj) {
-        Piece p=(Piece)obj;
-        return this.reference.equals(p.reference);
+    public HashMap<String, String> getPrincipalAttributes() throws IllegalAccessException {
+        return null;
+    }
+
+    @Override
+    public Modele<Visualisable> getModele() throws IllegalAccessException {
+        return new Modele<Visualisable>(this);
     }
 }
