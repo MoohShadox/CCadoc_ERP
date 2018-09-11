@@ -27,6 +27,7 @@ import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import DAO.DAOLivre;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.io.IOException;
@@ -184,9 +185,19 @@ public class Controller_Visuel_Stock extends Controlleur_Visualisable<Livre> {
 
      @FXML
      void Supprimer_Selection(ActionEvent actionEvent) {
-
-
     }
 
+    @FXML
+    private void fermerFenetre() {
+        DashBordController DB=new DashBordController();
+        Stage s = (Stage) DB.acceuilPane.getScene().getWindow();
+        s.show();
+        this.fermerFenetre(VisualisationStock);
+    }
+
+    @FXML
+    private void Iconify() {
+        this.Iconify(VisualisationStock);
+    }
 
 }

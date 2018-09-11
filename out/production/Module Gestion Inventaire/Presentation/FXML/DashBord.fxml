@@ -8,7 +8,6 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -150,7 +149,7 @@
       </HBox>
    </top>
    <center>
-      <StackPane prefHeight="531.0" prefWidth="1146.0" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="509.0" prefWidth="1142.0" BorderPane.alignment="CENTER">
          <children>
             <Pane fx:id="aProposPane" layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: white;" />
             <Pane fx:id="statsPane" prefHeight="449.0" prefWidth="706.0" style="-fx-background-color: white;" />
@@ -204,7 +203,8 @@
                   </HBox>
                </children>
             </Pane>
-            <Pane fx:id="stockPane" prefHeight="449.0" prefWidth="705.0" style="-fx-background-color: white;">
+            <Pane fx:id="acceuilPane" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: white;" />
+            <Pane fx:id="stockPane" prefHeight="507.0" prefWidth="1142.0" style="-fx-background-color: white;">
                <children>
                   <Text fill="#ff8635" layoutX="35.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Visualisation Du Stock" wrappingWidth="253.9830722808838">
                      <font>
@@ -216,181 +216,159 @@
                         <Image url="@../Assets/Forward.png" />
                      </image>
                   </ImageView>
-                  <HBox layoutX="2.0" layoutY="54.0" prefHeight="423.0" prefWidth="1135.0" spacing="20.0" stylesheets="@../CSSstyling/Style.css">
+                  <VBox layoutY="88.0" prefHeight="410.0" prefWidth="1142.0" spacing="30.0">
                      <children>
-                        <VBox alignment="TOP_CENTER" prefHeight="458.0" prefWidth="536.0">
+                        <HBox prefHeight="45.0" prefWidth="1122.0">
                            <children>
-                              <JFXComboBox fx:id="ChoixStockComboBox" focusColor="#5b5851" focusTraversable="false" labelFloat="true" onAction="#ChoixStock" prefHeight="34.0" prefWidth="490.0" promptText="Choisir Un Stock" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
+                              <JFXComboBox fx:id="ChoixStockComboBox" focusColor="#5b5851" focusTraversable="false" labelFloat="true" onAction="#ChoixStock" prefHeight="34.0" prefWidth="594.0" promptText="Choisir Un Stock" unFocusColor="#ffc619">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
-                                 <VBox.margin>
-                                    <Insets bottom="5.0" />
-                                 </VBox.margin>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
                               </JFXComboBox>
-                              <TableView fx:id="VisualisationStock" prefHeight="255.0" prefWidth="463.0" styleClass="Text-row" stylesheets="@../CSSstyling/Style.css" VBox.vgrow="ALWAYS">
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                              </TableView>
-                              <HBox alignment="CENTER" prefHeight="4.0" prefWidth="463.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                              <JFXButton focusTraversable="false" onAction="#Gerer_Stock_Action" prefHeight="33.0" prefWidth="201.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Gérer le stock " textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="200.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton focusTraversable="false" onAction="#Supprimer_Stock" prefHeight="33.0" prefWidth="201.0" ripplerFill="#4d4949" style="-fx-background-color: #ff3f3c;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Supprimer le Stock" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="348.0" prefWidth="1142.0" spacing="50.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="401.0" prefWidth="525.0" spacing="45.0">
                                  <children>
-                                    <JFXTextField fx:id="ISBNAjout" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="25.0" prefWidth="218.0" promptText="ISBN" unFocusColor="#ffc619" HBox.hgrow="ALWAYS">
+                                    <Label prefHeight="55.0" prefWidth="442.0" text="Utiliser un inventaire pour enrichir un stock :" textFill="#635e5ebf" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Impact" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="InventaireUtilise" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="33.0" prefWidth="365.0" promptText="Choisir Un Inventaire" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
-                                    </JFXTextField>
-                                    <JFXTextField fx:id="QteAjouter" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="25.0" prefWidth="111.0" promptText="Quantité" unFocusColor="#ffc619" HBox.hgrow="ALWAYS">
-                                       <HBox.margin>
+                                    </JFXComboBox>
+                                    <JFXCheckBox fx:id="CompletionCheckbox" checkedColor="#26a69a" focusTraversable="false" prefHeight="42.0" prefWidth="367.0" text="Compléter les champs de référencement local" textFill="#645e5e" unCheckedColor="#ffc619" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Impact" size="16.0" />
+                                       </font>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox fx:id="PrixCheckbox" checkedColor="#26a69a" focusTraversable="false" layoutX="34.0" layoutY="207.0" prefHeight="32.0" prefWidth="369.0" text="Assigner les prix manuellement" textFill="#645e5e" unCheckedColor="#ffc619" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Impact" size="17.0" />
+                                       </font>
+                                    </JFXCheckBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" stylesheets="@../CSSstyling/Style.css" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <JFXButton focusTraversable="false" onAction="#VerifierButton" prefHeight="33.0" prefWidth="103.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Vérifier" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Impact" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#AdditionnerButton" prefHeight="33.0" prefWidth="97.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Addition" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Impact" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton focusTraversable="false" layoutX="123.0" layoutY="10.0" onAction="#TransfererButton" prefHeight="33.0" prefWidth="108.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Transférer" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Impact" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton focusTraversable="false" layoutX="236.0" layoutY="10.0" onAction="#SoustraireButton" prefHeight="33.0" prefWidth="103.0" ripplerFill="#f54242" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Soustraire" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Impact" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="50.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <Line endX="100.1886215209961" endY="-39.84014892578125" startX="100.18883514404297" startY="-399.133056640625" stroke="#f2dd8b" />
+                              <VBox alignment="TOP_CENTER" prefHeight="381.0" prefWidth="436.0" spacing="60.0">
+                                 <children>
+                                    <Label prefHeight="32.0" prefWidth="237.0" text="Créer un stock physique : " textFill="#635e5ec0" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Impact" size="22.0" />
+                                       </font>
+                                       <VBox.margin>
                                           <Insets />
-                                       </HBox.margin>
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="NomStockCree" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="36.0" prefWidth="237.0" promptText="Nom du Stock" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </JFXTextField>
-                                    <JFXButton focusTraversable="false" onAction="#AjouterStockButton" prefHeight="33.0" prefWidth="199.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Ajouter Un Titre Au Stock" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                    <JFXTextField fx:id="LocalisationStockCree" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="129.0" prefHeight="36.0" prefWidth="237.0" promptText="Localisation" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton focusTraversable="false" onAction="#CreerAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Créer" textFill="WHITE" VBox.vgrow="ALWAYS">
                                        <font>
                                           <Font name="Impact" size="16.0" />
                                        </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </JFXButton>
                                  </children>
-                              </HBox>
-                              <JFXButton focusTraversable="false" onAction="#AjoutPlusieursTitres" prefHeight="25.0" prefWidth="254.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Ajouter Plusieurs Titres Au Stock" textFill="WHITE" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="16.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXButton>
+                              </VBox>
                            </children>
-                           <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <Line endX="-26.000045776367188" endY="389.29290771484375" startX="-26.0" startY="-22.0" stroke="#f2dd8b">
-                           <HBox.margin>
-                              <Insets top="50.0" />
-                           </HBox.margin>
-                        </Line>
-                        <VBox alignment="CENTER" prefHeight="468.0" prefWidth="384.0" spacing="29.0">
-                           <children>
-                              <Label prefHeight="60.0" prefWidth="373.0" text="Utiliser un inventaire pour enrichir un stock :" textFill="#635e5ebf" wrapText="true" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="22.0" />
-                                 </font>
-                              </Label>
-                              <JFXComboBox fx:id="InventaireUtilise" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="36.0" prefWidth="365.0" promptText="Choisir Un Inventaire" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXComboBox>
-                              <JFXCheckBox fx:id="CompletionCheckbox" checkedColor="#26a69a" focusTraversable="false" prefHeight="42.0" prefWidth="367.0" text="Compléter les champs de référencement local" textFill="#645e5e" unCheckedColor="#ffc619" wrapText="true" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="16.0" />
-                                 </font>
-                              </JFXCheckBox>
-                              <JFXCheckBox fx:id="PrixCheckbox" checkedColor="#26a69a" focusTraversable="false" layoutX="34.0" layoutY="207.0" prefHeight="32.0" prefWidth="369.0" text="Assigner les prix manuellement" textFill="#645e5e" unCheckedColor="#ffc619" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="17.0" />
-                                 </font>
-                              </JFXCheckBox>
-                              <HBox alignment="CENTER" prefHeight="128.0" prefWidth="387.0" spacing="3.0" stylesheets="@../CSSstyling/Style.css" VBox.vgrow="ALWAYS">
-                                 <children>
-                                    <JFXButton focusTraversable="false" onAction="#VerifierButton" prefHeight="33.0" prefWidth="103.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Vérifier" textFill="WHITE" HBox.hgrow="ALWAYS">
-                                       <font>
-                                          <Font name="Impact" size="16.0" />
-                                       </font>
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor>
-                                    </JFXButton>
-                                    <JFXButton focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#AdditionnerButton" prefHeight="33.0" prefWidth="97.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Addition" textFill="WHITE" HBox.hgrow="ALWAYS">
-                                       <font>
-                                          <Font name="Impact" size="16.0" />
-                                       </font>
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor>
-                                    </JFXButton>
-                                    <JFXButton focusTraversable="false" layoutX="123.0" layoutY="10.0" onAction="#TransfererButton" prefHeight="33.0" prefWidth="108.0" ripplerFill="#4d4949" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Transférer" textFill="WHITE" HBox.hgrow="ALWAYS">
-                                       <font>
-                                          <Font name="Impact" size="16.0" />
-                                       </font>
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor>
-                                    </JFXButton>
-                                    <JFXButton focusTraversable="false" layoutX="236.0" layoutY="10.0" onAction="#SoustraireButton" prefHeight="33.0" prefWidth="103.0" ripplerFill="#f54242" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Soustraire" textFill="WHITE" HBox.hgrow="ALWAYS">
-                                       <font>
-                                          <Font name="Impact" size="16.0" />
-                                       </font>
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor>
-                                    </JFXButton>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="50.0" />
-                                 </VBox.margin>
-                              </HBox>
-                           </children>
-                        </VBox>
-                        <Line endX="-26.0" endY="417.0" startX="-26.0" stroke="#f2dd8b">
-                           <HBox.margin>
-                              <Insets top="50.0" />
-                           </HBox.margin>
-                        </Line>
-                        <VBox alignment="TOP_CENTER" prefHeight="468.0" prefWidth="155.0" spacing="70.0">
-                           <children>
-                              <Label prefHeight="56.0" prefWidth="237.0" text="Créer un stock physique : " textFill="#635e5ec0" wrapText="true" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="22.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                              </Label>
-                              <JFXTextField fx:id="NomStockCree" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="36.0" prefWidth="237.0" promptText="Nom du Stock" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXTextField>
-                              <JFXTextField fx:id="LocalisationStockCree" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="129.0" prefHeight="36.0" prefWidth="237.0" promptText="Localisation" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXTextField>
-                              <JFXButton focusTraversable="false" onAction="#CreerAction" prefHeight="33.0" prefWidth="103.0" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Créer" textFill="WHITE" VBox.vgrow="ALWAYS">
-                                 <font>
-                                    <Font name="Impact" size="16.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </JFXButton>
-                           </children>
-                        </VBox>
+                        </HBox>
                      </children>
-                  </HBox>
+                  </VBox>
                </children>
             </Pane>
-            <Pane fx:id="acceuilPane" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: white;" />
          </children>
       </StackPane>
    </center>
