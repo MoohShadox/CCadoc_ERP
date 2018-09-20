@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 public class EmployesDAO extends GenericDAO<Employe> {
+
     public EmployesDAO(Employe T) throws SQLException, IllegalAccessException {
         super(T);
     }

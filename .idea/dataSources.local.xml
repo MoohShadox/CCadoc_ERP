@@ -11,5 +11,14 @@
       <user-name>CADOC_ADMIN</user-name>
       <introspection-schemas>*:CADOC_ADMIN</introspection-schemas>
     </data-source>
+    <data-source name="NewPersistenceUnit/TopLink" uuid="2eda5008-2b77-4d6c-88bd-2c4e3a75d44f">
+      <database-info product="Oracle" version="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <user-name>CADOC_ADMIN</user-name>
+      <introspection-schemas>*:CADOC_ADMIN</introspection-schemas>
+    </data-source>
   </component>
 </project>

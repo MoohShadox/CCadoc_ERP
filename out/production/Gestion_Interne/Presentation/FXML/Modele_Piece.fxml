@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="999.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Control.Modele_Piece">
+    <VBox fx:id="Contenair" layoutX="4.0" prefHeight="1244.0" prefWidth="586.0">
+        <AnchorPane fx:id="En_Tete">
+            <GridPane layoutX="258.0" layoutY="14.0" prefHeight="142.0" prefWidth="312.0" style="-fx-border-color: BLACK;">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+            </GridPane>
+            <Label fx:id="Type_Piece" layoutX="228.0" layoutY="165.0" text="&lt;Type de la pièce&gt;" />
+            <Label fx:id="Reference" layoutX="491.0" layoutY="165.0" text="&lt;Réference&gt;" />
+            <Label layoutY="163.0" text="Client ">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutY="188.0" text="Dénomination : ">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label fx:id="Denomination_Client" layoutX="106.0" layoutY="182.0" prefHeight="34.0" prefWidth="186.0" text="&lt;Dénomination du client&gt;" />
+            <ImageView fitHeight="119.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="63.0" layoutY="71.0" mnemonicParsing="false" onAction="#BAction" prefHeight="40.0" prefWidth="106.0" text="B1" />
+        </AnchorPane>
+        <AnchorPane fx:id="EnTete2" prefHeight="34.0" prefWidth="430.0">
+            <children>
+                <Label fx:id="Reference" layoutY="10.0" text="FACTURE N° PRO01b01F013/17/139">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+                <Label layoutX="1.0" layoutY="21.0" text="CADOC S.A.R.L, COMPAGNIE ALGERIENNE DE DOCUMENTATION ET DE CONSEIL">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="Details_Commande" prefHeight="605.0" prefWidth="586.0" />
+        <AnchorPane fx:id="PiedPage1" prefHeight="175.0" prefWidth="586.0">
+            <GridPane layoutX="405.0" layoutY="15.0" prefHeight="82.0" prefWidth="167.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <Label text="Total H.T" />
+                <Label fx:id="TotalHR_Label" layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="58.0" text="..." GridPane.columnIndex="1" />
+                <Label layoutX="10.0" layoutY="16.0" text="TVA 9%" GridPane.rowIndex="1" />
+                <Label fx:id="TVA_Label" layoutX="155.0" layoutY="16.0" prefHeight="18.0" prefWidth="58.0" text="..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label layoutX="10.0" layoutY="46.0" text="Total T.T.C" GridPane.rowIndex="2" />
+                <Label fx:id="TTC_Label" layoutX="155.0" layoutY="46.0" prefHeight="18.0" prefWidth="58.0" text="..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            </GridPane>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En toute lettres : Arrêter la presente Facture a la somme de : " wrappingWidth="325.7603759765625" />
+            <Text fx:id="Toute_Lettres" layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="312.00000358372927" />
+            <Label layoutX="303.0" layoutY="103.0" text="Gerante " />
+        </AnchorPane>
+      <AnchorPane prefHeight="102.0" prefWidth="586.0">
+         <children>
+            <Text fx:id="PiedPage2" layoutX="1.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse : Hai El Bina, 147, Bois des Cars III Dely Ibrahim, Alger, 16320 Mob : 0660 57 63 37, Std = (023) 30 43 03, Fax = 023 30 43 01, Email : universite.doc@cadoc.dz Compte Bancaire CPA : Agence Hydra, RIB : 004001264001280011-Clé 85, Compte Banquaire BEA : Agence Ben M'Hidi, RIB : 002000151503161776 Compte postal courant CCP : CC 71036 27 CLE 74 ALGER" textAlignment="CENTER" wrappingWidth="584.0000047087669">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </VBox>
+</AnchorPane>

@@ -1560,7 +1560,7 @@ class RequestMockBuilder(object):
       response = self.responses[methodId]
       resp, content = response[:2]
       if len(response) > 2:
-        # Test the body against the supplied expected_body.
+        # POJO.Test the body against the supplied expected_body.
         expected_body = response[2]
         if bool(expected_body) != bool(body):
           # Not expecting a body and provided one

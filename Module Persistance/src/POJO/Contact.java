@@ -1,18 +1,22 @@
 package POJO;
 
+import Exceptions.BuildingException;
+import Interfaces.DAOAble;
+
+import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Contact {
-    private static long cpt=0;
+public class Contact implements DAOAble<Contact> {
+
     private long numContact; //numéro séquentiel
     private String denomnation,adresse,type;
+
     private LinkedList<Mail> mails=new LinkedList<>();
     private LinkedList<SiteWeb> sites=new LinkedList<>();
     private LinkedList<TelFax> tels=new LinkedList<>();
 
-    public Contact(){
-        numContact =++cpt;
-    }
+    //TODO Ajouter les controles relatifs au champs Mails, Site Web, Tel, Fax
+
 
     public long getNumContact() {
         return numContact;
@@ -46,6 +50,8 @@ public class Contact {
         this.type = type;
     }
 
+
+
     public void addMail(Mail m){
         if(!mails.contains(m))
             mails.add(m);
@@ -76,8 +82,59 @@ public class Contact {
             tels.remove(t);
     }
 
+    public LinkedList<Mail> getMails() {
+        return mails;
+    }
+
+    public LinkedList<SiteWeb> getSites() {
+        return sites;
+    }
+
+    public LinkedList<TelFax> getTels() {
+        return tels;
+    }
+
     @Override
     public String toString() {
         return denomnation;
+    }
+
+    @Override
+    public HashMap<String, String> getRepositoryAttributs() throws IllegalAccessException {
+        HashMap<String,String> H = new HashMap<>();
+        H.put("NUMC",numContact+"");
+        H.put("DENOMINATION",denomnation);
+        H.put("ADRESSE",adresse);
+        H.put("TYPE",type);
+        return H;
+    }
+
+    @Override
+    public String getTableName() {
+        return "CONTACT";
+    }
+
+    @Override
+    public String getReference() {
+        return numContact+"";
+    }
+
+    @Override
+    public String getKeyName() {
+        return "NUMC";
+    }
+
+    @Override
+    public Contact buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
+        Contact C = new Contact();
+        if(H.containsKey("NUMC"))
+            C.numContact = Integer.valueOf(H.get("NUMC"));
+        if(H.containsKey("DENOMINATION"))
+            C.denomnation= H.get("DENOMINATION");
+        if(H.containsKey("ADRESSE"))
+            C.adresse = H.get("ADRESSE");
+        if(H.containsKey("TYPE"))
+            C.type = H.get("TYPE");
+        return C;
     }
 }

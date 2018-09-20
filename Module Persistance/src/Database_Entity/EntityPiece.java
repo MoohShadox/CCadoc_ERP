@@ -89,7 +89,6 @@ public class EntityPiece {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(reference, dateFacture, typeFacture, transaction, delai, rempli);
     }
 }

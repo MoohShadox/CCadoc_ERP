@@ -3,14 +3,11 @@ package POJO;
 import java.util.LinkedList;
 
 public class Client {
-    private static long cpt=0;
+
     private long numClient; //code client
     private String nom;
     private LinkedList<Contact> contacts= new LinkedList<>();
 
-    public Client(){
-        numClient =++cpt;
-    }
 
     public long getNumClient() {
         return numClient;

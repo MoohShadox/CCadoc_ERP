@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="841.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Control.Milieu_Piece">
+    <children>
+        <TableView fx:id="Details_Commande" layoutX="9.0" layoutY="62.0" prefHeight="706.0" prefWidth="583.0" />
+      <AnchorPane fx:id="EnTete2" layoutX="9.0" layoutY="14.0" prefHeight="36.0" prefWidth="583.0">
+         <children>
+            <Label fx:id="Reference" layoutX="1.0" layoutY="5.0" text="FACTURE : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" layoutY="21.0" text="CADOC S.A.R.L, COMPAGNIE ALGERIENNE DE DOCUMENTATION ET DE CONSEIL">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Reference" layoutX="68.0" layoutY="4.0" text="N° PRO01b01F013/17/139">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="770.0" prefHeight="61.0" prefWidth="586.0">
+         <children>
+            <Text fx:id="PiedPage2" layoutX="1.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse : Hai El Bina, 147, Bois des Cars III Dely Ibrahim, Alger, 16320 Mob : 0660 57 63 37, Std = (023) 30 43 03, Fax = 023 30 43 01, Email : universite.doc@cadoc.dz Compte Bancaire CPA : Agence Hydra, RIB : 004001264001280011-Clé 85, Compte Banquaire BEA : Agence Ben M'Hidi, RIB : 002000151503161776 Compte postal courant CCP : CC 71036 27 CLE 74 ALGER" textAlignment="CENTER" wrappingWidth="584.0000047087669">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

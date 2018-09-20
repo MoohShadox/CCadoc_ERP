@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cadoc_ERP.iml" filepath="$PROJECT_DIR$/Cadoc_ERP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gestion Répertoire/Gestion Répertoire.iml" filepath="$PROJECT_DIR$/Gestion Répertoire/Gestion Répertoire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gestion_Interne/Gestion_Interne.iml" filepath="$PROJECT_DIR$/Gestion_Interne/Gestion_Interne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module Gestion Inventaire/Module Gestion Inventaire.iml" filepath="$PROJECT_DIR$/Module Gestion Inventaire/Module Gestion Inventaire.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module Persistance/Module Persistance.iml" filepath="$PROJECT_DIR$/Module Persistance/Module Persistance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module Python/Module Python.iml" filepath="$PROJECT_DIR$/Module Python/Module Python.iml" />

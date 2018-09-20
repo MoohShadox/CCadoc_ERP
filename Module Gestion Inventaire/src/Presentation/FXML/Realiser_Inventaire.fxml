@@ -58,7 +58,7 @@
                                 <Font name="Impact" size="18.0" />
                             </font>
                         </Label>
-                        <Label maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Nombre de stocks ou il figure" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="POJO.Nombre de stocks ou il figure" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
                             <font>
                                 <Font name="Impact" size="18.0" />
                             </font>

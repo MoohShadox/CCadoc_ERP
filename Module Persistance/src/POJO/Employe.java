@@ -33,8 +33,8 @@ public class Employe implements DAOAble<Employe>, Visualisable {
         return prenom;
     }
 
-    public void setPrenom(String prénom){
-        this.prenom=prénom;
+    public void setPrenom(String prenom){
+        this.prenom=prenom;
     }
 
     public String getPoste() {

@@ -14,10 +14,15 @@ public class Recensement<Type extends Visualisable> {
     private HashMap <String, Type> contenu;
     private HashMap <String, HashMap <String, String>> attributs_principaux;
     private ObservableMap<String, Modele<Type>> map = FXCollections.observableMap(new HashMap<>());
+    private TableView <Modele <Type>> visuel;
 
     public Recensement() {
         contenu = new HashMap <> ( );
         attributs_principaux = new HashMap <> ( );
+    }
+
+    public TableView<Modele<Type>> getVisuel() {
+        return visuel;
     }
 
     public void ajouter(Type T) throws IllegalAccessException {
@@ -87,6 +92,7 @@ public class Recensement<Type extends Visualisable> {
 
 
     public HashMap <String, TableColumn <Modele <Type>, String>> appliquer_visuel_recensement(TableView <Modele <Type>> visuel) {
+        this.visuel = visuel;
         HashMap <String, TableColumn <Modele <Type>, String>> ensemble_colonnes = new HashMap <> ( );
         visuel.setItems(FXCollections.observableArrayList());
         visuel.getItems().clear();
