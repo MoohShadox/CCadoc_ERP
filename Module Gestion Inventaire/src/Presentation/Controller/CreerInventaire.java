@@ -119,7 +119,7 @@ public class CreerInventaire extends Controller<Inventaire, Modele<Inventaire>> 
 
 
     @FXML
-    private void fermerFenetre(ActionEvent e) throws SQLException, BuildingException, NonExistantDansLaBDD, IllegalAccessException {
+    private void fermerFenetre() throws SQLException, BuildingException, NonExistantDansLaBDD, IllegalAccessException {
         Stage stage = (Stage) BoutonCreer.getScene().getWindow();
         DB.clean_interface();
         DB.load_interface();

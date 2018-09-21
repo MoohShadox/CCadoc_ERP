@@ -5,6 +5,7 @@
     <entity class="Database_Entity.EntityEstInventorier">
         <table name="EST_INVENTORIER" schema="CADOC_ADMIN" catalog=""/>
         <attributes>
+            <id name="id"/>
             <basic name="isbn">
                 <column name="ISBN" nullable="false" length="15"/>
             </basic>

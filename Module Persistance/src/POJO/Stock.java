@@ -11,7 +11,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 
-public class Stock implements DAOAble<Stock>, Visualisable {
+public class Stock implements DAOAble<Stock>, Visualisable,Destination {
     private String nom="";
     private String localisation="";
     private Date realisation = Calendar.getInstance().getTime();
@@ -108,5 +108,10 @@ public class Stock implements DAOAble<Stock>, Visualisable {
             e.printStackTrace();
         }
         return S;
+    }
+
+    @Override
+    public String getAdresse() {
+        return localisation;
     }
 }

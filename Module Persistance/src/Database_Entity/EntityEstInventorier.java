@@ -43,7 +43,15 @@ public class EntityEstInventorier {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(isbn, qte);
+    }
+
+    @javax.persistence.Id
+    public String getId() {
+        return isbn;
+    }
+
+    public void setId(String id) {
+        this.isbn = isbn;
     }
 }

@@ -6,7 +6,7 @@ import Interfaces.DAOAble;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Contact implements DAOAble<Contact> {
+public class Contact implements DAOAble<Contact>,Destination {
 
     private long numContact; //numéro séquentiel
     private String denomnation,adresse,type;

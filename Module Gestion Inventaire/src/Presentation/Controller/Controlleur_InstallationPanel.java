@@ -1,7 +1,6 @@
 package Presentation.Controller;
 
 import Java_Python_Exploitation.PythonCaller;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -20,7 +19,7 @@ public class Controlleur_InstallationPanel {
     private TextField Project_Field;
 
     @FXML
-    void Configurer_Action(ActionEvent event) throws IOException {
+    void Configurer_Action() throws IOException {
         if ( Interpreteur_Field.getText ( ).isEmpty ( ) || Project_Field.getText ( ).isEmpty ( ) ) {
             Alert A = new Alert ( Alert.AlertType.ERROR );
             A.setTitle ( "Erreur Arguments manquant" );

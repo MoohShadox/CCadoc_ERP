@@ -264,16 +264,16 @@ public class Realiser_Inventaire_Controlleur extends Controlleur_Visualisable<In
 
 
     @FXML
-    private void fermerFenetre(ActionEvent e) {
+    private void fermerFenetre() {
         this.fermerFenetre(TableProgression);
     }
 
     @FXML
-    private void Iconify(ActionEvent e) {
+    private void Iconify() {
         this.Iconify(TableProgression);
     }
 
-    public void Finalisation(ActionEvent actionEvent) throws SQLException, IllegalAccessException {
+    public void Finalisation() throws SQLException, IllegalAccessException {
         Statement S = ConnectionOrcl.getInstance().createStatement();
         S.executeUpdate("UPDATE INVENTAIRES SET FINALISE='true' WHERE NOM_INVENTAIRE=\'"+inventaire_courant.getNom_inventaire()+"\'");
     }

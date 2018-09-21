@@ -1,0 +1,1 @@
+INSERT INTO CADOC_ADMIN.SITEW (URL, DESCRIPTION_URL, NUMC) VALUES ('www.sossi.com', 'Site de sossi', 1);

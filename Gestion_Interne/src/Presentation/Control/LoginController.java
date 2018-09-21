@@ -30,7 +30,7 @@ public class LoginController implements Controllable {
     }
 
     @FXML
-    private void fermerFenetre(javafx.event.ActionEvent e) {
+    private void fermerFenetre() {
         Stage stage = (Stage) connexion.getScene().getWindow();
         stage.close();
     }

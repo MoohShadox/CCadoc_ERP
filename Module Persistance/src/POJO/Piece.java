@@ -40,6 +40,13 @@ public class Piece implements Visualisable, DAOAble<Piece> {
         sources.put(L,source);
     }
 
+    public void setContact(Contact numClientConcerne) {
+        this.numClientConcerne = numClientConcerne;
+    }
+
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
+    }
 
     public String total_toutes_lettres() throws Exception {
         float total = 0;

@@ -1,11 +1,11 @@
 package POJO;
 
 public enum Types_Pieces {
-    facture,
-    avoir,
-    proformat,
-    bonsortie,
-    bonentree,
-    bonlivraison,
-    consultation;
+    FACUTRE,
+    AVOIR,
+    PROFORMA,
+    BON,
+    BON_LIVRAISON,
+    CONSULTATION;
+
 }

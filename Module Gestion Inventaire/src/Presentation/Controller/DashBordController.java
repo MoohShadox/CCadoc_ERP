@@ -21,7 +21,6 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -78,10 +77,10 @@ public class DashBordController extends Controller<Inventorier, Modele<Inventori
         chargement_en_cours.start();
     }
 
-    public void AjouterStockButton(ActionEvent actionEvent) {
+    public void AjouterStockButton() {
     }
 
-    public void AjoutPlusieursTitres(ActionEvent actionEvent) {
+    public void AjoutPlusieursTitres() {
     }
 
     public void VerifierButton(ActionEvent actionEvent) throws IOException, SQLException{

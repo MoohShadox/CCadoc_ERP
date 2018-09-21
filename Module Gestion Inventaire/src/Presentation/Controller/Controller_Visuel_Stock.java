@@ -6,14 +6,11 @@ import DAO.DAO;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Exceptions.NonExistantDansLesInfos;
-import Interfaces.Controller;
 import Interfaces.Controlleur_Visualisable;
 import Interfaces.Modele;
 import POJO.Inventorier;
 import POJO.Livre;
-import POJO.Stock;
 import Presentation.FXML.Gestionaire_Interface;
-import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
@@ -22,7 +19,6 @@ import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -35,7 +31,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -80,7 +75,7 @@ public class Controller_Visuel_Stock extends Controlleur_Visualisable<Livre> {
 
 
     @FXML
-    void AjoutPlusieursTitres(ActionEvent event) {
+    void AjoutPlusieursTitres() {
 
     }
 

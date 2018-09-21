@@ -10,7 +10,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -31,7 +30,7 @@ public class Informations_Telechargees_Controller extends Controller<Inventorier
 
 
     @FXML
-    private void fermerFenetre(javafx.event.ActionEvent e) {
+    private void fermerFenetre() {
         this.fermerFenetre(pane);
     }
 

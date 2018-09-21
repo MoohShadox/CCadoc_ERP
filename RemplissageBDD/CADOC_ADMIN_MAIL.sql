@@ -1,0 +1,1 @@
+INSERT INTO CADOC_ADMIN.MAIL (ADRESSE_MAIL, NOM_MAIL, TYPEC, NUMC) VALUES ('sossi@gmail.com', 'sosslabite', 'cool', 1);

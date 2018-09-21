@@ -1,0 +1,1 @@
+INSERT INTO CADOC_ADMIN.EMPLOYE (NUM_E, NOM, PRENOM, POSTE) VALUES (1, 'Sossi', 'Nassim ', 'responsable_marketing');

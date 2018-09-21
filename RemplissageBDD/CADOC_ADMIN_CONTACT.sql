@@ -1,0 +1,1 @@
+INSERT INTO CADOC_ADMIN.CONTACT (NUMC, DENOMINATION, ADRESSE, TYPE) VALUES (1, 'Ministere de quelquechose', 'quelquepart', 'Cool                     ');

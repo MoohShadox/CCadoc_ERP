@@ -1,26 +1,18 @@
 package Presentation.Controller;
 
 
-import Composants_Visuels.VisuelCreator;
 import Connections.ConnectionOrcl;
 import DAO.DAO;
-import DAO.DAOLivre;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
-import Exceptions.NonExistantDansLesInfos;
 import Interfaces.Controlleur_Visualisable;
 import Presentation.FXML.Gestionaire_Interface;
-import Interfaces.Modele;
 
 import POJO.*;
 import DAO.StockDAO;
 import Presentation.FXML.Main2;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXSpinner;
-import javafx.animation.PauseTransition;
-import javafx.application.Platform;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.concurrent.WorkerStateEvent;
@@ -31,22 +23,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.util.Callback;
-import javafx.util.Duration;
 
 import java.io.IOException;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.LinkedList;
 
 public class Gestion_Stock extends Controlleur_Visualisable<Livre> {
 
@@ -249,7 +236,7 @@ public class Gestion_Stock extends Controlleur_Visualisable<Livre> {
         }*/
     }
 
-    public void AjouterStockButton(ActionEvent actionEvent) {
+    public void AjouterStockButton() {
 
     }
 

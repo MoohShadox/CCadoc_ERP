@@ -2,7 +2,7 @@
 <entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
         version="2.0">
 
-    <entity class="Database_Entity.EntityRentreStock">
+    <entity class="POJO.EntityRentreStock">
         <table name="RENTRE_STOCK" schema="CADOC_ADMIN" catalog=""/>
         <id-class class="Database_Entity.EntityRentreStockPK"/>
         <attributes>

@@ -4,9 +4,7 @@ import Connections.ConnectionOrcl;
 import Exceptions.BuildingException;
 import Exceptions.ExistantDansLaPieceException;
 import Exceptions.NonExistantDansLaBDD;
-import POJO.Livre;
-import POJO.Piece;
-import POJO.Stock;
+import POJO.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -36,7 +34,16 @@ public class PieceDAO extends GenericDAO<Piece> {
                 e.printStackTrace();
             }
         }
-
+        DAO<Contact> DC = new DAOContact(new Contact());
+        RS = S.executeQuery("SELECT NUMC FROM CADOC_ADMIN.PIECE WHERE REFERENCE = \'"+P.getReference()+"\'");
+        while (RS.next()){
+            P.setContact(DC.recuperer(RS.getString(1)));
+        }
+        RS = S.executeQuery("SELECT NUM_E FROM CADOC_ADMIN.PIECE WHERE REFERENCE = \'"+P.getReference()+"\'");
+        DAO<Employe> DE = new EmployesDAO(new Employe());
+        while(RS.next()){
+            P.setEmploye(DE.recuperer(RS.getString(1)));
+        }
         return P;
     }
 
