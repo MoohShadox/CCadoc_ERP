@@ -2,11 +2,13 @@ package POJO;
 
 import Exceptions.BuildingException;
 import Interfaces.DAOAble;
+import Interfaces.Modele;
+import Interfaces.Visualisable;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Contact implements DAOAble<Contact>,Destination {
+public class Contact implements DAOAble<Contact>,Destination, Visualisable {
 
     private long numContact; //numéro séquentiel
     private String denomnation,adresse,type;
@@ -117,6 +119,16 @@ public class Contact implements DAOAble<Contact>,Destination {
     @Override
     public String getReference() {
         return numContact+"";
+    }
+
+    @Override
+    public HashMap<String, String> getPrincipalAttributes() throws IllegalAccessException {
+        return getRepositoryAttributs();
+    }
+
+    @Override
+    public Modele<Visualisable> getModele() throws IllegalAccessException {
+        return new Modele<>(this);
     }
 
     @Override

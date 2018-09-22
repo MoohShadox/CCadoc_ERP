@@ -1,9 +1,13 @@
 package POJO;
 
 import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
+import Interfaces.Descriptible;
 import Interfaces.Modele;
 import Interfaces.Visualisable;
+
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -11,7 +15,7 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Livre implements Visualisable, DAOAble<Livre> {
+public class Livre implements Visualisable, Descriptible<Livre> {
     private String ISBN;
     private String titre;
     private String auteur;
@@ -329,4 +333,18 @@ public class Livre implements Visualisable, DAOAble<Livre> {
     }
 
 
+    @Override
+    public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
+
+    }
+
+    @Override
+    public String getContenu() {
+        return null;
+    }
+
+    @Override
+    public boolean verfier() {
+        return false;
+    }
 }

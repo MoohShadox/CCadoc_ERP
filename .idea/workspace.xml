@@ -2,38 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7023037-320a-406a-9756-053fe8231114" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Gestion Mouvements Stock/Gestion Mouvements Stock.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Gestion_Mouvements_Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestion_Mouvements_Stock.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Destination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Mouvement_Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Rentres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6352bc6d-62b0-44c9-afc5-4c4e7df975cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6352bc6d-62b0-44c9-afc5-4c4e7df975cc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6352bc6d-62b0-44c9-afc5-4c4e7df975cc/storage_v2/_src_/schema/CADOC_ADMIN.qsY87Q.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6352bc6d-62b0-44c9-afc5-4c4e7df975cc/storage_v2/_src_/schema/CADOC_ADMIN.qsY87Q.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outils_Conception/src/Interfaces/Descriptible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Controller_Visuel_Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Controller_Visuel_Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Controlleur_InstallationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Controlleur_InstallationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/CreerInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/CreerInventaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/DashBordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/DashBordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Gestion_Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Gestion_Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Informations_Telechargees_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Informations_Telechargees_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Realiser_Inventaire_Controlleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/Controller/Realiser_Inventaire_Controlleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/DAO/PieceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/PieceDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/Database_Entity/EntityEstInventorier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/Database_Entity/EntityEstInventorier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/Database_Entity/EntityRentreStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/Database_Entity/RentreStockEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/EntityEstInventorier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/EntityEstInventorier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/EntityRentreStock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/EntityRentreStock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/Entity_Descriptor/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestion Répertoire/Gestion Répertoire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion Répertoire/Gestion Répertoire.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Type_Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Type_Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Types_Pieces.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Types_Pieces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/FXML/Gestion_Contacts.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/Moteur_Enrichissement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/Moteur_Enrichissement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/PythonCaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/PythonCaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/Control/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/Control/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/Control/Modele_Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/Control/Modele_Piece.java___jb_tmp___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/FXML/Informations_Telechargees.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gestion_Interne/Presentation/FXML/Modele_Piece.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controller_Visuel_Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controlleur_InstallationPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Controlleur_InstallationPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/CreerInventaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/CreerInventaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$InventaireVisuel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController$InventaireVisuel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/DashBordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Gestion_Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Informations_Telechargees_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Informations_Telechargees_Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Realiser_Inventaire_Controlleur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Gestion Inventaire/Presentation/Controller/Realiser_Inventaire_Controlleur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Persistance/DAO/MouvementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Persistance/DAO/MouvementDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Persistance/Database_Entity/EntityRentreStock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Livre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Livre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Persistance/POJO/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Python/Java_Python_Exploitation/Moteur_Enrichissement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Python/Java_Python_Exploitation/Moteur_Enrichissement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module Python/Java_Python_Exploitation/PythonCaller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module Python/Java_Python_Exploitation/PythonCaller.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,124 +109,169 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mouvement_Stock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Mouvement_Stock.java">
+      <file leaf-file-name="Repertoire.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modele_Contact.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Descriptible.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Outils_Conception/src/Interfaces/Descriptible.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1942#1943#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2016#2017#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOMail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOMail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOAble.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Outils_Conception/src/Interfaces/DAOAble.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Livre.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="337" selection-start-line="337" selection-end-line="337" />
+              <folding>
                 <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1508#1509#0" expanded="true" />
-                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#2498#2499#0" expanded="true" />
+                <element signature="e#2546#2547#0" expanded="true" />
+                <element signature="e#5631#5632#0" expanded="true" />
+                <element signature="e#5658#5659#0" expanded="true" />
+                <element signature="e#5708#5709#0" expanded="true" />
+                <element signature="e#5740#5741#0" expanded="true" />
+                <element signature="e#5788#5789#0" expanded="true" />
+                <element signature="e#5817#5818#0" expanded="true" />
+                <element signature="e#6425#6426#0" expanded="true" />
+                <element signature="e#6452#6453#0" expanded="true" />
+                <element signature="e#6492#6493#0" expanded="true" />
+                <element signature="e#6524#6525#0" expanded="true" />
+                <element signature="e#6556#6557#0" expanded="true" />
+                <element signature="e#6584#6585#0" expanded="true" />
+                <element signature="e#6626#6627#0" expanded="true" />
+                <element signature="e#6660#6661#0" expanded="true" />
+                <element signature="e#6693#6694#0" expanded="true" />
+                <element signature="e#6722#6723#0" expanded="true" />
+                <element signature="e#6766#6767#0" expanded="true" />
+                <element signature="e#6802#6803#0" expanded="true" />
+                <element signature="e#6836#6837#0" expanded="true" />
+                <element signature="e#6866#6867#0" expanded="true" />
+                <element signature="e#6912#6913#0" expanded="true" />
+                <element signature="e#6950#6951#0" expanded="true" />
+                <element signature="e#6989#6990#0" expanded="true" />
+                <element signature="e#7026#7027#0" expanded="true" />
+                <element signature="e#7084#7085#0" expanded="true" />
+                <element signature="e#7136#7137#0" expanded="true" />
+                <element signature="e#7169#7170#0" expanded="true" />
+                <element signature="e#7199#7200#0" expanded="true" />
+                <element signature="e#7244#7245#0" expanded="true" />
+                <element signature="e#7282#7283#0" expanded="true" />
+                <element signature="e#7316#7317#0" expanded="true" />
+                <element signature="e#7347#7348#0" expanded="true" />
+                <element signature="e#7394#7395#0" expanded="true" />
+                <element signature="e#7434#7435#0" expanded="true" />
+                <element signature="e#7468#7469#0" expanded="true" />
+                <element signature="e#7498#7499#0" expanded="true" />
+                <element signature="e#7544#7545#0" expanded="true" />
+                <element signature="e#7582#7583#0" expanded="true" />
+                <element signature="e#7617#7618#0" expanded="true" />
+                <element signature="e#7648#7649#0" expanded="true" />
+                <element signature="e#7696#7697#0" expanded="true" />
+                <element signature="e#7736#7737#0" expanded="true" />
+                <element signature="e#7771#7772#0" expanded="true" />
+                <element signature="e#7802#7803#0" expanded="true" />
+                <element signature="e#7850#7851#0" expanded="true" />
+                <element signature="e#7890#7891#0" expanded="true" />
+                <element signature="e#7922#7923#0" expanded="true" />
+                <element signature="e#7950#7951#0" expanded="true" />
+                <element signature="e#7992#7993#0" expanded="true" />
+                <element signature="e#8026#8027#0" expanded="true" />
+                <element signature="e#8058#8059#0" expanded="true" />
+                <element signature="e#8086#8087#0" expanded="true" />
+                <element signature="e#8128#8129#0" expanded="true" />
+                <element signature="e#8162#8163#0" expanded="true" />
+                <element signature="e#8195#8196#0" expanded="true" />
+                <element signature="e#8224#8225#0" expanded="true" />
+                <element signature="e#8268#8269#0" expanded="true" />
+                <element signature="e#8304#8305#0" expanded="true" />
+                <element signature="e#8350#8351#0" expanded="true" />
+                <element signature="e#8378#8379#0" expanded="true" />
+                <element signature="e#8734#8735#0" expanded="true" />
+                <element signature="e#8761#8762#0" expanded="true" />
+                <element signature="e#8807#8808#0" expanded="true" />
+                <element signature="e#8835#8836#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RentresStockDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java">
+      <file leaf-file-name="GenericDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/GenericDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1277">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MouvementDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java">
+      <file leaf-file-name="DAOLivre.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOLivre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SE_MOUVOIE" pinned="false" current-in-tab="false">
-        <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/SE_MOUVOIE">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-              <column-attributes>
-                <column name="ROWID" enabled="false" />
-              </column-attributes>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rentres.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Rentres.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Destination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Destination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MOUVEMENTS" pinned="false" current-in-tab="false">
-        <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/MOUVEMENTS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Types_Pieces.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Types_Pieces.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PIECE" pinned="false" current-in-tab="false">
-        <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/PIECE">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="68">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -224,8 +282,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -235,13 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/GestionEmployes.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/LoginController.java" />
-        <option value="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/FXML/Main2.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestionaire_Interface.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Entete_Piece.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Corps_Facture.fxml" />
-        <option value="$PROJECT_DIR$/Outils_Conception/src/Interfaces/Recensement.java" />
         <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Corps_Facture.java" />
         <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Modele_Piece.fxml" />
         <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Modele_Piece.java" />
@@ -259,7 +310,6 @@
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Client.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/SiteWeb.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/TelFax.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Concept.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOMail.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOTelFax.java" />
@@ -276,7 +326,6 @@
         <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Gestion_Mouvements_Stock.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/EntityRentreStock.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/RentreStock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Stock.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/Database_Entity/RentreStock.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Type_Transaction.java" />
@@ -286,6 +335,15 @@
         <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Rentres.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java" />
         <option value="$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java" />
+        <option value="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/Moteur_Enrichissement.java" />
+        <option value="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/PythonCaller.java" />
+        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" />
+        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Descriptible.java" />
+        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java" />
+        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java" />
+        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java" />
       </list>
     </option>
   </component>
@@ -305,6 +363,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -317,7 +376,18 @@
             <path>
               <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
               <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="Gestion Mouvements Stock" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion Répertoire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Gestion Répertoire" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
@@ -344,11 +414,42 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="POJO" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Outils_Conception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Outils_Conception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Outils_Conception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Composants_Visuels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Outils_Conception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCadoc_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCadoc_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="Outils_Conception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,6 +464,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -388,7 +490,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DAOContact">
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="DAOContact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DAO.DAOContact" />
       <module name="Module Persistance" />
@@ -504,8 +606,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DAOContact" />
         <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.DAOContact" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.PythonCaller" />
@@ -538,45 +640,69 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112452000" />
+    <option name="totallyTimeSpent" value="116695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32943678" />
-      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.14739583" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32857144" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.14714494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32943678" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27417642" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.2761905" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2730159" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.33262485" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2203125" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21961933" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27417642" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2203125" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.14739583" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32943678" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.33262485" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,122 +725,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Postes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/EST_DANS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/PRODUIT_INFO">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/EST_FACTURE_DANS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/EMPLOYE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/TelFax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/Date">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOTelFax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/SiteWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOSiteWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Employe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -732,27 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/FXML/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Concept.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOLivre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -784,17 +777,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Gestion_Contacts.java" />
     <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOContact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="629">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -806,16 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Impression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,10 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,10 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,9 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,25 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1901#1902#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,10 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29">
           <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="e#2816#2817#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,35 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2413#2414#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,35 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-272">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,9 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,6 +956,226 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="757">
           <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/FXML/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/Moteur_Enrichissement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/PythonCaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="50" column="87" lean-forward="true" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Impression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="96" column="80" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Gestion Inventaire/src/POJO/Inventorier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOLivre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Outils_Conception/src/Interfaces/Descriptible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/DAOMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Outils_Conception/src/Interfaces/DAOAble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1277">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+          <folding>
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
+            <element signature="e#5740#5741#0" expanded="true" />
+            <element signature="e#5788#5789#0" expanded="true" />
+            <element signature="e#5817#5818#0" expanded="true" />
+            <element signature="e#6425#6426#0" expanded="true" />
+            <element signature="e#6452#6453#0" expanded="true" />
+            <element signature="e#6492#6493#0" expanded="true" />
+            <element signature="e#6524#6525#0" expanded="true" />
+            <element signature="e#6556#6557#0" expanded="true" />
+            <element signature="e#6584#6585#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#6660#6661#0" expanded="true" />
+            <element signature="e#6693#6694#0" expanded="true" />
+            <element signature="e#6722#6723#0" expanded="true" />
+            <element signature="e#6766#6767#0" expanded="true" />
+            <element signature="e#6802#6803#0" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
+            <element signature="e#6866#6867#0" expanded="true" />
+            <element signature="e#6912#6913#0" expanded="true" />
+            <element signature="e#6950#6951#0" expanded="true" />
+            <element signature="e#6989#6990#0" expanded="true" />
+            <element signature="e#7026#7027#0" expanded="true" />
+            <element signature="e#7084#7085#0" expanded="true" />
+            <element signature="e#7136#7137#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7199#7200#0" expanded="true" />
+            <element signature="e#7244#7245#0" expanded="true" />
+            <element signature="e#7282#7283#0" expanded="true" />
+            <element signature="e#7316#7317#0" expanded="true" />
+            <element signature="e#7347#7348#0" expanded="true" />
+            <element signature="e#7394#7395#0" expanded="true" />
+            <element signature="e#7434#7435#0" expanded="true" />
+            <element signature="e#7468#7469#0" expanded="true" />
+            <element signature="e#7498#7499#0" expanded="true" />
+            <element signature="e#7544#7545#0" expanded="true" />
+            <element signature="e#7582#7583#0" expanded="true" />
+            <element signature="e#7617#7618#0" expanded="true" />
+            <element signature="e#7648#7649#0" expanded="true" />
+            <element signature="e#7696#7697#0" expanded="true" />
+            <element signature="e#7736#7737#0" expanded="true" />
+            <element signature="e#7771#7772#0" expanded="true" />
+            <element signature="e#7802#7803#0" expanded="true" />
+            <element signature="e#7850#7851#0" expanded="true" />
+            <element signature="e#7890#7891#0" expanded="true" />
+            <element signature="e#7922#7923#0" expanded="true" />
+            <element signature="e#7950#7951#0" expanded="true" />
+            <element signature="e#7992#7993#0" expanded="true" />
+            <element signature="e#8026#8027#0" expanded="true" />
+            <element signature="e#8058#8059#0" expanded="true" />
+            <element signature="e#8086#8087#0" expanded="true" />
+            <element signature="e#8128#8129#0" expanded="true" />
+            <element signature="e#8162#8163#0" expanded="true" />
+            <element signature="e#8195#8196#0" expanded="true" />
+            <element signature="e#8224#8225#0" expanded="true" />
+            <element signature="e#8268#8269#0" expanded="true" />
+            <element signature="e#8304#8305#0" expanded="true" />
+            <element signature="e#8350#8351#0" expanded="true" />
+            <element signature="e#8378#8379#0" expanded="true" />
+            <element signature="e#8734#8735#0" expanded="true" />
+            <element signature="e#8761#8762#0" expanded="true" />
+            <element signature="e#8807#8808#0" expanded="true" />
+            <element signature="e#8835#8836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Unitex-GramLab/Unitex/French/Corpus/80jours.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1124,7 +1222,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1141,6 +1239,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

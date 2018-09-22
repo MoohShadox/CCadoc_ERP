@@ -1,11 +1,15 @@
 package POJO;
 
+import DAO.*;
 import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
+import Interfaces.Descriptible;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 
-public class Mail implements DAOAble<Mail> {
+public class Mail implements Descriptible<Mail> {
     private String adresseMail;
     private String typeC, nomMail;
 
@@ -77,4 +81,30 @@ public class Mail implements DAOAble<Mail> {
     }
 
 
+    @Override
+    public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
+        DAO<Mail> DM = new DAOMail(new Mail());
+        Mail M= DM.recuperer(ref);
+        if(!M.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
+            switch (attribut){
+                case "ADRESSE_MAIL":M.adresseMail=nouvelle_valeur;
+                break;
+                case "NOM_MAIL":M.nomMail=nouvelle_valeur;
+                break;
+                case "TYPEC":M.typeC = nouvelle_valeur;
+                break;
+            }
+        }
+        DM.mettre_a_jour(M,ref);
+    }
+
+    @Override
+    public String getContenu() {
+        return null;
+    }
+
+    @Override
+    public boolean verfier() {
+        return false;
+    }
 }
