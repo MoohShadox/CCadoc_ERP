@@ -2,13 +2,16 @@ package POJO;
 
 
 import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
+import Interfaces.Descriptible;
 import Interfaces.Modele;
 import Interfaces.Visualisable;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 
-public class TelFax implements DAOAble<TelFax> {
+public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     private String numero;
     private boolean telfax;
     private Contact contact;
@@ -67,5 +70,20 @@ public class TelFax implements DAOAble<TelFax> {
         if(H.containsKey("TELFAX"))
             TF.telfax = Boolean.valueOf(H.get("TELFAX"));
         return TF;
+    }
+
+    @Override
+    public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
+
+    }
+
+    @Override
+    public String getContenu() {
+        return null;
+    }
+
+    @Override
+    public boolean verfier() {
+        return false;
     }
 }

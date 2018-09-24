@@ -3,6 +3,7 @@ package Interfaces;
 import Interfaces.Visualisable;
 import javafx.beans.property.SimpleStringProperty;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 public class Modele<T extends Visualisable> {
@@ -29,6 +30,7 @@ public class Modele<T extends Visualisable> {
         return propriete_visible.get ( s );
     }
 
+    public Collection<String> getPropertyNames(){return propriete_visible.keySet();}
 
 
 }
