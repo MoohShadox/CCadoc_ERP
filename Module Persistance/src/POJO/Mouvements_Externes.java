@@ -5,9 +5,9 @@ import Interfaces.DAOAble;
 
 import java.util.HashMap;
 
-public class Rentres extends Mouvement_Stock {
+public class Mouvements_Externes extends Mouvement_Stock {
 
-    public Rentres(Mouvement_Stock MS){
+    public Mouvements_Externes(Mouvement_Stock MS){
         super.date = MS.date;
         super.destination = MS.destination;
         super.employe = MS.employe;

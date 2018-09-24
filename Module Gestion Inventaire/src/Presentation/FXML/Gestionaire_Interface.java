@@ -29,7 +29,7 @@ public class Gestionaire_Interface {
 
     /*
     Ici, je me sers de l'interface controllable, au final tout ce dont j'ai besoin au moment de changer de fenetre ou d'en créer une nouvelle c'est le titre
-    de la fenetre et le chemin du FXML correspondant, j'ai aussi besoin qu'elle me renvoie le controlleur
+    de la fenetre et le chemin du Présentation.FXML correspondant, j'ai aussi besoin qu'elle me renvoie le controlleur
     Etant donné que c'est impossible et fastidieux de faire une méthode par controlleur
     J'ai factorisé les controlleurs grace a l'interface controllable (implementé par la classe abstraite), ainsi je récupère via cette méthode un objet
     dont je peux me servir de 3 façon : en lui inférant une collection, en lui demandant de rafraichir sa collection observable sur ça collection, ou en lui inférant une donnée simple
