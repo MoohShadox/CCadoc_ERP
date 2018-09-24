@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7023037-320a-406a-9756-053fe8231114" name="Default" comment="">
+    <list default="true" id="a53f57a7-f575-4ded-befb-02f726fc8c5c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Gestion Mouvements Stock/src/Présentation/Controller_Visualisation_Mouvements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion Mouvements Stock/src/Présentation/FXML/Visualisation_Mouvements.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/Modele_Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/Module Persistance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/Module Persistance.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Nombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/SiteWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/SiteWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/TelFax.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/TelFax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outils_Conception/src/Interfaces/Modele.java" beforeDir="false" afterPath="$PROJECT_DIR$/Outils_Conception/src/Interfaces/Modele.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestion_Mouvements_Stock.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestion_Mouvements_Stock.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestionaire_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestionaire_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/FXML/Gestionaire_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Gestion Inventaire/src/Presentation/FXML/Gestionaire_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module Persistance/src/POJO/Rentres.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module Persistance/src/POJO/Mouvements_Externes.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="25" column="63" lean-forward="true" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,12 +88,12 @@
         <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/PieceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
-              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PRODUIT" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PRODUIT" pinned="false" current-in-tab="false">
         <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/PRODUIT">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -104,7 +102,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STOCK" pinned="false" current-in-tab="false">
+      <file leaf-file-name="STOCK" pinned="false" current-in-tab="true">
         <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/STOCK">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -163,85 +161,14 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Modele_Piece.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Modele_Piece.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Modele_Piece2.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Premiere_Page.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Milieu_Piece.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Premiere_Page.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Milieu_Piece.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Derniere_Page.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Derniere_Page.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Modele_Piece2.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/Database_Entity/EntityPiece.java" />
-        <option value="$PROJECT_DIR$/Outils_Conception/src/Exceptions/ExistantDansLaPieceException.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Client.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Concept.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOMail.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOTelFax.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOSiteWeb.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Employe.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Main.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/DAOContact.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestion_Contacts.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Impression.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/Database_Entity/EntityEstInventorier.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Piece.java" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/FXML/Gestion_Mouvements_Stock.fxml" />
-        <option value="$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Gestion_Mouvements_Stock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/EntityRentreStock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/RentreStock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Stock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/Database_Entity/RentreStock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Type_Transaction.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Types_Pieces.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Destination.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Mouvement_Stock.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Rentres.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/RentresStockDAO.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/MouvementDAO.java" />
-        <option value="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/Moteur_Enrichissement.java" />
-        <option value="$PROJECT_DIR$/Module Python/src/Java_Python_Exploitation/PythonCaller.java" />
-        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Descriptible.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Mail.java" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Livre.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/SiteWeb.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/TelFax.java" />
-        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Modele_Contact.java" />
-        <option value="$PROJECT_DIR$/Outils_Conception/src/Interfaces/Modele.java" />
-        <option value="$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/DAO/PieceDAO.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Nombre.java" />
-        <option value="$PROJECT_DIR$/Module Persistance/src/POJO/Contact.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-39" />
-    <option name="width" value="641" />
-    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -337,32 +264,6 @@
       <pane id="AndroidView" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="JPA.DatabaseSchemaImportDialog" value="6352bc6d-62b0-44c9-afc5-4c4e7df975cc" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RemplissageBDD" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Geekzone\Desktop\CCadoc_ERP\Gestion_Interne\src\Presentation" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Presentation.FXML" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Geekzone\Desktop\CCadoc_ERP\Gestion_Interne\src" />
-      <recent name="C:\Users\Geekzone\Desktop\CCadoc_ERP\Gestion_Interne\src\Presentation\Presentation\FXML" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -375,73 +276,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main2">
-    <configuration name="DAOContact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAO.DAOContact" />
-      <module name="Module Persistance" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Presentation.FXML.Main" />
-      <module name="Gestion_Interne" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Presentation.FXML.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Presentation.FXML.Main2" />
-      <module name="Module Gestion Inventaire" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Presentation.FXML.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="PythonCaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java_Python_Exploitation.PythonCaller" />
-      <module name="Module Python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java_Python_Exploitation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="POJO.Test" />
-      <module name="Gestion_Interne" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="GlassFish 4.1.2" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.2" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
-      </server-settings>
-      <predefined_log_file id="GlassFish" enabled="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="9009" />
-      </RunnerSettings>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -481,23 +318,6 @@
       <properties />
       <listeners />
     </configuration>
-    <list>
-      <item itemvalue="GlassFish Server.GlassFish 4.1.2" />
-      <item itemvalue="Application.Main2" />
-      <item itemvalue="Application.PythonCaller" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.DAOContact" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.DAOContact" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.PythonCaller" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -521,16 +341,15 @@
       <workItem from="1536952670207" duration="7053000" />
       <workItem from="1537202896843" duration="31476000" />
       <workItem from="1537533252464" duration="19073000" />
-      <workItem from="1537774885232" duration="3343000" />
+      <workItem from="1537774885232" duration="3563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120646000" />
+    <option name="totallyTimeSpent" value="6000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
@@ -551,11 +370,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2730159" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2730159" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.33174604" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21961933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21961933" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,24 +386,8 @@
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32943678" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url />
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="14" />
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Gestion_Interne/src/Presentation/Control/Gestion_Contacts.java" />
@@ -911,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/STOCK">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/EST_DANS">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -928,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/Gestion Répertoire/Client/Repertoire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="25" column="63" lean-forward="true" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -938,7 +734,7 @@
     <entry file="file://$PROJECT_DIR$/Module Persistance/src/DAO/PieceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -984,81 +780,12 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>JPA</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="das://6352bc6d-62b0-44c9-afc5-4c4e7df975cc/schema/CADOC_ADMIN/table/STOCK">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
