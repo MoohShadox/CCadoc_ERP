@@ -21,7 +21,7 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
     private LinkedList<SiteWeb> sites=new LinkedList<>();
     private LinkedList<TelFax> tels=new LinkedList<>();
 
-    //TODO Ajouter les controles relatifs au champs Mails, Site Web, Tel, Fax
+    //TODO Ajouter les controles relatifs au champs Mails, Site Web, TelFax
 
 
     public long getNumContact() {
@@ -160,12 +160,7 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
     }
 
     @Override
-    public String getContenu() {
-        return null;
-    }
-
-    @Override
-    public boolean verfier() {
+    public boolean verfier(String s) {
         return false;
     }
 }

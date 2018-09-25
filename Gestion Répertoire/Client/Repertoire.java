@@ -24,13 +24,52 @@ public class Repertoire {
                 if(!references.containsKey(change.getKey())){
                     try {
                         DAO<Mail> DM = new DAOMail(new Mail());
-                        DM.ajouter(change.getValueAdded().getSrc());
+                        if(change.wasAdded())
+                            DM.ajouter(change.getValueAdded().getSrc());
+                        else if(change.wasRemoved())
+                            DM.supprimer(change.getValueRemoved().getSrc());
                     } catch (SQLException | IllegalAccessException e) {
                         e.printStackTrace();
                     }
                 }
             }
         });
+
+        section_sitew.addListener(new MapChangeListener<Long, Modele_Contact<SiteWeb>>() {
+            @Override
+            public void onChanged(Change<? extends Long, ? extends Modele_Contact<SiteWeb>> change) {
+                if(!references.containsKey(change.getKey())){
+                    try {
+                        DAO<SiteWeb> DSW = new DAOSiteWeb(new SiteWeb());
+                        if(change.wasAdded())
+                            DSW.ajouter(change.getValueAdded().getSrc());
+                        else if(change.wasRemoved())
+                            DSW.supprimer(change.getValueRemoved().getSrc());
+                    } catch (SQLException | IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        section_telfax.addListener(new MapChangeListener<Long, Modele_Contact<TelFax>>() {
+            @Override
+            public void onChanged(Change<? extends Long, ? extends Modele_Contact<TelFax>> change) {
+                if(!references.containsKey(change.getKey())){
+                    try {
+                        DAO<TelFax> DTF = new DAOTelFax(new TelFax());
+                        if ((change.wasAdded()))
+                            DTF.ajouter(change.getValueAdded().getSrc());
+                        else if(change.wasRemoved())
+                            DTF.supprimer(change.getValueRemoved().getSrc());
+                    } catch (SQLException | IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+
     }
 
 
@@ -39,8 +78,14 @@ public class Repertoire {
         for(Mail M:c.getMails()){
             section_mail.put(c.getNumContact(),new Modele_Contact<Mail>(M));
         }
-        //TEL FAX
-        //SITE WEB
+
+        for(SiteWeb SW:c.getSites()){
+            section_sitew.put(c.getNumContact(),new Modele_Contact<SiteWeb>(SW));
+        }
+
+        for(TelFax TF:c.getTels()){
+            section_telfax.put(c.getNumContact(),new Modele_Contact<TelFax>(TF));
+        }
     }
 
 

@@ -90,6 +90,47 @@ public class DAOContact extends GenericDAO<Contact> {
     }
 
     @Override
+    public void supprimer(Contact T) throws SQLException, IllegalAccessException {
+        super.supprimer(T);
+        Statement S = ConnectionOrcl.getInstance().createStatement();
+        DAO<SiteWeb> DSW = new DAOSiteWeb(new SiteWeb());
+        DAO<TelFax> DTF = new DAOTelFax(new TelFax());
+        DAO<Mail> DM = new DAOMail(new Mail());
+        for(SiteWeb SS:T.getSites()) {
+            try {
+                DSW.recuperer(SS.getReference());
+                DSW.supprimer(SS);
+            }
+            catch (NonExistantDansLaBDD nonExistantDansLaBDD) {
+                nonExistantDansLaBDD.printStackTrace();
+            } catch (BuildingException e) {
+                e.printStackTrace();
+            }
+        }
+        for(TelFax TF:T.getTels()){
+            try {
+                DTF.recuperer(TF.getReference());
+                DTF.supprimer(TF);
+            } catch (NonExistantDansLaBDD nonExistantDansLaBDD) {
+                nonExistantDansLaBDD.printStackTrace();
+            } catch (BuildingException e) {
+                e.printStackTrace();
+            }
+        }
+        for(Mail M:T.getMails()){
+            try {
+                DM.recuperer(M.getReference());
+                DM.supprimer(M);
+            }catch (NonExistantDansLaBDD nonExistantDansLaBDD) {
+                nonExistantDansLaBDD.printStackTrace();
+            } catch (BuildingException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    @Override
     public Collection<Contact> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, NonExistantDansLaBDD {
         return null;
     }

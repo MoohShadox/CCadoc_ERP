@@ -1,6 +1,7 @@
 package POJO;
 
 
+import DAO.*;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
@@ -74,16 +75,22 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
 
     @Override
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
-
+        DAO<TelFax> DTF = new DAOTelFax(new TelFax());
+        TelFax TF= DTF.recuperer(ref);
+        if(!TF.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
+            switch (attribut){
+                case "NUMERO":TF.numero=nouvelle_valeur;
+                    break;
+                case "TELFAX":TF.telfax=Boolean.valueOf(nouvelle_valeur);
+                    break;
+            }
+        }
+        DTF.mettre_a_jour(TF,ref);
     }
 
     @Override
-    public String getContenu() {
-        return null;
-    }
-
-    @Override
-    public boolean verfier() {
+    public boolean verfier(String s) {
         return false;
     }
 }
+

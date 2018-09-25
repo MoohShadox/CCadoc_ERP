@@ -99,12 +99,7 @@ public class Mail implements Descriptible<Mail> {
     }
 
     @Override
-    public String getContenu() {
-        return null;
-    }
-
-    @Override
-    public boolean verfier() {
+    public boolean verfier(String s) {
         return false;
     }
 }
