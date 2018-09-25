@@ -38,6 +38,7 @@ public class MouvementDAO extends GenericDAO<Mouvement_Stock> {
         }
     }
 
+
     public MouvementDAO(Mouvement_Stock T) throws SQLException, IllegalAccessException {
         super(T);
     }
@@ -46,4 +47,6 @@ public class MouvementDAO extends GenericDAO<Mouvement_Stock> {
     public Collection<Mouvement_Stock> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, NonExistantDansLaBDD {
         return null;
     }
+
+
 }

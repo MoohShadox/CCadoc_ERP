@@ -1,14 +1,18 @@
 package POJO;
 
+import DAO.Modele_Contact;
 import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
+import Interfaces.Descriptible;
 import Interfaces.Modele;
 import Interfaces.Visualisable;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-public class Contact implements DAOAble<Contact>,Destination, Visualisable {
+public class Contact implements DAOAble<Contact>,Destination, Visualisable, Descriptible<Contact> {
 
     private long numContact; //numéro séquentiel
     private String denomnation,adresse,type;
@@ -148,5 +152,20 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable {
         if(H.containsKey("TYPE"))
             C.type = H.get("TYPE");
         return C;
+    }
+
+    @Override
+    public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
+
+    }
+
+    @Override
+    public String getContenu() {
+        return null;
+    }
+
+    @Override
+    public boolean verfier() {
+        return false;
     }
 }

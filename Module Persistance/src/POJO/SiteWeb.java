@@ -1,12 +1,15 @@
 package POJO;
 
 import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
+import Interfaces.Descriptible;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.HashMap;
 
-public class SiteWeb implements DAOAble<SiteWeb> {
+public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     private String url, description;
     private Contact contact;
 
@@ -63,5 +66,20 @@ public class SiteWeb implements DAOAble<SiteWeb> {
         if(H.containsKey("URL"))
             SW.url = H.get("URL");
         return SW;
+    }
+
+    @Override
+    public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
+
+    }
+
+    @Override
+    public String getContenu() {
+        return null;
+    }
+
+    @Override
+    public boolean verfier() {
+        return false;
     }
 }

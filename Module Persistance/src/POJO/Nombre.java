@@ -9,7 +9,7 @@ public enum Nombre {
 	QUINZE(15, "quinze"),SEIZE(16, "seize"),DIXSEPT(17, "dix-sept"),
 	DIXHUIT(18, "dix-huit"),DIXNEUF(19, "dix-neuf"),
 	
-	//de 20 à 99
+	//de 20 a 99
 	VINGT(20, 29, "vingt"),
 	TRENTE(30, 39, "trente"),
 	QUARANTE(40, 49, "quarante"), 
@@ -19,7 +19,7 @@ public enum Nombre {
 	QUATREVINGT(80, 89,"quatre-vingt","s"),
 	QUATREVINGTDIX(90, 99, "quatre-vingt-dix",QUATREVINGT),
 	
-	//de 10 à X milliard
+	//de 10 a X milliard
 	DIXAINE(10, 99),
 	CENT(100, 999, "cent",DIXAINE),
 	MILLE(1000, 999999, "mille", CENT),
@@ -66,7 +66,7 @@ public enum Nombre {
 	protected long min, max;
 	protected String label;
 	protected Nombre before;
-	// valeur à ajout à la fin d'un nombre entier
+	// valeur a ajout a la fin d'un nombre entier
 	private String addMin;
 	/* constructeurs*/
 	Nombre() {
@@ -97,11 +97,11 @@ public enum Nombre {
 	}
 	
 	protected String getValue(long value)throws Exception{
-		throw new Exception("Vous devez appeller la méthode par l'énumération Chiffre.CALCULATE");
+		throw new Exception("Vous devez appeller la methode par l'enumeration Chiffre.CALCULATE");
 	}
 
 	protected String getValue(double value,String separator)throws Exception{
-		throw new Exception("Vous devez appeller la méthode par l'énumération Chiffre.CALCULATE");
+		throw new Exception("Vous devez appeller la methode par l'enumeration Chiffre.CALCULATE");
 	}
 
 	// fonction de transformation
@@ -114,7 +114,7 @@ public enum Nombre {
 		if(value<20) return values[(int)value].label;
 		for (int i = 0; i < values.length; i++) {
 			Nombre nombre = values[i];
-			//si la valeur est inférieur à 100
+			//si la valeur est inferieur a 100
 			if (value < 100 && nombre.min <= value && nombre.max >= value) {
 				//cas des valeurs 20, 30, 40, etc...
 				if (value == nombre.min) return nombre.label+((nombre.addMin!=null)?nombre.addMin:"");
@@ -134,7 +134,7 @@ public enum Nombre {
 					return sb.toString();
 				}
 			} else if (nombre.min <= v1 && nombre.max >= v1 && value >= 100) {
-				//première partie du nombre
+				//premiere partie du nombre
 				
 				//100 et 1000
 				if ((this.equals(MILLE) || this.equals(CENT))&& Nombre.UN.equals(nombre))
@@ -143,10 +143,10 @@ public enum Nombre {
 					add.append(nombre.getStringValue(v1));
 					//cas : Million de millard et Milliard de milliard 
 					add.append(((MILLIARD.equals(this)&& (MILLION.equals(nombre) || MILLIARD.equals(nombre)) ? " de" : "")));
-					//ajout du label si présent
+					//ajout du label si present
 					add.append(((label != null) ? " " + label : ""));
 				}
-				//deuxième partie du nombre
+				//deuxieme partie du nombre
 				add.append(((value - (v1 * this.min) > 0) ? (" " + before.getStringValue(value - (v1 * this.min))): (v1 > 1) ? "s" : ""));
 				return add.toString();
 			}

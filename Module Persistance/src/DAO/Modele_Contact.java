@@ -1,3 +1,5 @@
+package DAO;
+
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.Descriptible;
@@ -12,6 +14,7 @@ import java.sql.SQLException;
 public class Modele_Contact<Type extends Descriptible> {
 
     private ObservableMap<String,SimpleStringProperty> description = FXCollections.observableHashMap();
+    private Type src;
 
     public Modele_Contact(Type T) throws IllegalAccessException {
         for(Object S:T.getRepositoryAttributs().keySet()){
@@ -27,9 +30,12 @@ public class Modele_Contact<Type extends Descriptible> {
                 }
             });
             //description.put((String) S,);
-
+            src = T;
         }
 
     }
 
+    public Type getSrc() {
+        return src;
+    }
 }
