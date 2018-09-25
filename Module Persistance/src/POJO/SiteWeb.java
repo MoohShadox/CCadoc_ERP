@@ -1,5 +1,6 @@
 package POJO;
 
+import DAO.*;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
@@ -70,16 +71,22 @@ public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
 
     @Override
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
-
+        DAO<SiteWeb> DSW = new DAOSiteWeb(new SiteWeb());
+        SiteWeb SW= DSW.recuperer(ref);
+        if(!SW.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
+            switch (attribut){
+                case "DESCRIPTION_URL":SW.description=nouvelle_valeur;
+                    break;
+                case "URL":SW.url=nouvelle_valeur;
+                    break;
+            }
+        }
+        DSW.mettre_a_jour(SW,ref);
     }
 
     @Override
-    public String getContenu() {
-        return null;
-    }
-
-    @Override
-    public boolean verfier() {
+    public boolean verfier(String s) {
         return false;
     }
 }
+

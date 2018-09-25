@@ -13,6 +13,8 @@ public abstract class DAO<Type> {
 
     public abstract void ajouter(Type T) throws SQLException, IllegalAccessException;
 
+    public abstract void supprimer(Type T) throws SQLException, IllegalAccessException;
+
     public abstract Type recuperer(String isbn) throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, BuildingException, NonExistantDansLaBDD;
 
     public abstract Collection <Type> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, NonExistantDansLaBDD;

@@ -29,7 +29,7 @@ public class Modele_Contact<Type extends Descriptible> {
                     }
                 }
             });
-            //description.put((String) S,);
+            description.put((String) S,SS);
             src = T;
         }
 
