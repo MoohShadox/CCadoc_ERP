@@ -70,7 +70,7 @@ public abstract class GenericDAO<Type extends DAOAble<Type>> extends DAO <Type> 
 
     @Override
     public void supprimer(Type T) throws SQLException, IllegalAccessException {
-        PreparedStatement S = c.prepareStatement ( "DELETE FROM \'" + T.getTableName ( ) +"\'WHERE \'"+T.getKeyName()+"\'=\'"+T.getReference()+"\'" );
+        PreparedStatement S = c.prepareStatement ( "DELETE FROM " + T.getTableName ( ) +" WHERE \""+T.getKeyName()+"\" = '"+T.getReference()+"'");
         S.executeQuery ( );
         S.close();
     }
