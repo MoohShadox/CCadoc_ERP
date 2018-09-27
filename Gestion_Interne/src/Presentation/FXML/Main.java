@@ -7,7 +7,6 @@ import POJO.Livre;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import java.util.Collection;
 import java.util.LinkedList;
 
 public class Main extends Application {

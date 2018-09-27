@@ -69,14 +69,4 @@ public abstract class Correction_Panel extends WindowButtons {
         TableComparaison.getColumns().add(C);
 
     }
-
-
-
-
-
-
-
-
-
-
 }
