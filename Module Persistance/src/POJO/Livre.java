@@ -339,12 +339,8 @@ public class Livre implements Visualisable, Descriptible<Livre> {
     }
 
     @Override
-    public String getContenu() {
-        return null;
-    }
-
-    @Override
-    public boolean verfier() {
+    public boolean verfier(String s) {
         return false;
     }
+    
 }
