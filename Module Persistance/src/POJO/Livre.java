@@ -342,4 +342,5 @@ public class Livre implements Visualisable, Descriptible<Livre> {
     public boolean verfier(String s) {
         return false;
     }
+    
 }
