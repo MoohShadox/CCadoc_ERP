@@ -15,6 +15,8 @@ public abstract class DAO<Type> {
 
     public abstract void supprimer(Type T) throws SQLException, IllegalAccessException;
 
+    public abstract void supprimer(String isbn) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException;
+
     public abstract Type recuperer(String isbn) throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, BuildingException, NonExistantDansLaBDD;
 
     public abstract Collection <Type> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, NonExistantDansLaBDD;

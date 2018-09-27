@@ -1,6 +1,5 @@
 package POJO;
 
-import DAO.Modele_Contact;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;

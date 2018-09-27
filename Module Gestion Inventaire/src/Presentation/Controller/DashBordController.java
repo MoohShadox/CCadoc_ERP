@@ -251,7 +251,6 @@ public class DashBordController extends Controller<Inventorier, Modele<Inventori
                     Stage PS = new Stage();
                     if(inventaire.getInventaire().getFinalise())
                     {
-                        //TODO créer une alerte qui te dit qu'on peut pas modifier un inventaire finalisé
                         MessageBox a=new MessageBox();
                         a.display("Alerte !","Vous ne pouvez pas modifier un inventaire finalisé !","Fermer");
                     }else{

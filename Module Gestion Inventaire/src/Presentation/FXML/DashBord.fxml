@@ -203,7 +203,6 @@
                   </HBox>
                </children>
             </Pane>
-            <Pane fx:id="acceuilPane" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: white;" />
             <Pane fx:id="stockPane" prefHeight="507.0" prefWidth="1142.0" style="-fx-background-color: white;">
                <children>
                   <Text fill="#ff8635" layoutX="35.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Visualisation Du Stock" wrappingWidth="253.9830722808838">
@@ -247,7 +246,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                                  <HBox.margin>
-                                    <Insets left="30.0" right="5.0" />
+                                    <Insets left="30.0" right="10.0" />
                                  </HBox.margin>
                               </JFXButton>
                            </children>
@@ -342,12 +341,12 @@
                                           <Insets />
                                        </VBox.margin>
                                        <cursor>
-                                          <Cursor fx:constant="HAND" />
+                                          <Cursor fx:constant="TEXT" />
                                        </cursor>
                                     </JFXTextField>
                                     <JFXTextField fx:id="LocalisationStockCree" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="129.0" prefHeight="36.0" prefWidth="237.0" promptText="Localisation" unFocusColor="#ffc619" VBox.vgrow="ALWAYS">
                                        <cursor>
-                                          <Cursor fx:constant="HAND" />
+                                          <Cursor fx:constant="TEXT" />
                                        </cursor>
                                     </JFXTextField>
                                     <JFXButton focusTraversable="false" onAction="#CreerAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" stylesheets="@../CSSstyling/Style.css" text="Créer" textFill="WHITE" VBox.vgrow="ALWAYS">
@@ -369,6 +368,7 @@
                   </VBox>
                </children>
             </Pane>
+            <Pane fx:id="acceuilPane" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: white;" />
          </children>
       </StackPane>
    </center>

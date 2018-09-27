@@ -17,9 +17,8 @@ public class DAOContact extends GenericDAO<Contact> {
 
     public static void main(String[] s) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<Contact> DC = new DAOContact(new Contact());
-        Contact c=DC.recuperer("1");
-
-        DC.supprimer(c);
+        //DC.ajouter(c);
+        DC.supprimer("0");
     }
 
     public DAOContact(Contact T) throws SQLException, IllegalAccessException {
