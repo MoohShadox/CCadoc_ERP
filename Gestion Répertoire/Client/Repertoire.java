@@ -71,6 +71,9 @@ public class Repertoire {
         for(Modele_Contact<Mail> MM : section_mail.get(c)){
             //Cherche le modele mail qui a la même adresse que le mail a modifier
             if(M.getAdresseMail().equalsIgnoreCase(MM.getSrc().getAdresseMail()))
+            {
+
+            }
                 //TODO pour faire une modification il faut prévoir une méthode dans Modele_Contact qui modifie une propriété nommée par un String
         }
 

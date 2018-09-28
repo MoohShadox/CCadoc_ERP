@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 public class Mouvements_Externes extends Mouvement_Stock {
 
+    private HashMap<Livre,Float> prix_acquisition = new HashMap<>();
+
     public Mouvements_Externes(Mouvement_Stock MS){
         super.date = MS.date;
         super.destination = MS.destination;
@@ -16,7 +18,7 @@ public class Mouvements_Externes extends Mouvement_Stock {
         super.source = MS.source;
     }
 
-    private HashMap<Livre,Float> prix_acquisition = new HashMap<>();
+
 
     public HashMap<Livre, Float> getPrix_acquisition() {
         return prix_acquisition;
