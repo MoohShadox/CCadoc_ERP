@@ -16,7 +16,6 @@ public class Main2 extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException, IllegalAccessException, SQLException {
         Gestionaire_Interface G = new Gestionaire_Interface ( primaryStage );
-        //Controllable<Inventorier> C =G.switchPanel("Gestion_Stock.fxml", "Informations Téléchargées");
         //Controllable<Inventorier> C =G.switchPanel("Completion_Inventaire.fxml", "Informations Téléchargées");
         Controllable<Livre> C =G.switchPanel("Dashbord.fxml", "Informations Téléchargées");
         C.setVisuel();

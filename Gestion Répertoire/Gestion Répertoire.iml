@@ -8,8 +8,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Gestion_Interne" exported="" />
-    <orderEntry type="module" module-name="Module Gestion Inventaire" />
     <orderEntry type="module" module-name="Module Persistance" exported="" />
     <orderEntry type="module" module-name="Outils_Conception" exported="" />
   </component>

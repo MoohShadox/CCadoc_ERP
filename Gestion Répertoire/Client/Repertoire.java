@@ -144,5 +144,20 @@ public class Repertoire {
         section_sitew.put(MC,OBS);
     }
 
+    public void supprimer_conctact(Contact c) throws IllegalAccessException {
+        references.remove(c.getNumContact());
+        for(Mail M:c.getMails()){
+            section_mail.remove(c.getNumContact());
+        }
+
+        for(SiteWeb SW:c.getSites()){
+            section_sitew.remove(c.getNumContact());
+        }
+
+        for(TelFax TF:c.getTels()){
+            section_telfax.remove(c.getNumContact());
+        }
+    }
+
 
 }
