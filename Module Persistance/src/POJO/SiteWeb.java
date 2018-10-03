@@ -12,7 +12,6 @@ import java.util.HashMap;
 
 public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     private String url, description;
-    private Contact contact;
 
     public String getUrl() {
         return url;
@@ -87,6 +86,11 @@ public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     @Override
     public boolean verfier(String s) {
         return false;
+    }
+
+    @Override
+    public Modele_Contact<SiteWeb> getModeleContact() throws IllegalAccessException {
+        return new Modele_Contact<SiteWeb>(this);
     }
 }
 

@@ -119,14 +119,22 @@ public abstract class GenericDAO<Type extends DAOAble<Type>> extends DAO <Type> 
         fetch(reference);
         for (String s : T.getRepositoryAttributs ( ).keySet ( )) {
             S = c.prepareStatement ( "UPDATE " + T.getTableName ( ) + " SET \"" + s + "\" = \'" +
-                    T.getRepositoryAttributs ( ).get ( s ) + " \' WHERE (\""+T.getKeyName()+"\"=\'"+reference+"\')");
+                    T.getRepositoryAttributs ( ).get ( s ) + "\' WHERE (\""+T.getKeyName()+"\"=\'"+reference+"\')");
             System.out.println( "UPDATE " + T.getTableName ( ) + " SET \"" + s + "\" = \'" +
-                    T.getRepositoryAttributs ( ).get ( s ) + " \' WHERE (\""+T.getKeyName()+"\"=\'"+reference+"\')");
+                    T.getRepositoryAttributs ( ).get ( s ) + "\' WHERE (\""+T.getKeyName()+"\"=\'"+reference+"\')");
             S.executeQuery ( );
         }
         if(S!=null)
             S.close ( );
         return T;
+    }
+
+
+    public void updateNumC(long numC , Type T) throws SQLException {
+        PreparedStatement s =c.prepareStatement("UPDATE "+ T.getTableName()+" SET NUMC = '"+numC+"' WHERE (\""+T.getKeyName()+"\"=\'"+T.getReference()+"\')");
+        System.out.println("UPDATE "+ T.getTableName()+" SET NUMC = '"+numC+"' WHERE (\""+T.getKeyName()+"\"=\'"+T.getReference()+"\')");
+        s.executeQuery();
+        s.close();
     }
 
 }

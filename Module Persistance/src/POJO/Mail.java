@@ -83,8 +83,9 @@ public class Mail implements Descriptible<Mail> {
 
     @Override
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
-        DAO<Mail> DM = new DAOMail(new Mail());
-        Mail M= DM.recuperer(ref);
+        DAO<Mail> DM=new DAOMail(new Mail());
+        System.out.println(ref);
+        Mail M=DM.recuperer(ref);
         if(!M.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
             switch (attribut){
                 case "ADRESSE_MAIL":M.adresseMail=nouvelle_valeur;
@@ -101,5 +102,10 @@ public class Mail implements Descriptible<Mail> {
     @Override
     public boolean verfier(String s) {
         return false;
+    }
+
+    @Override
+    public Modele_Contact<Mail> getModeleContact() throws IllegalAccessException {
+        return new Modele_Contact<Mail>(this);
     }
 }

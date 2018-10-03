@@ -1,5 +1,6 @@
 package POJO;
 
+import DAO.Modele_Contact;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
@@ -342,5 +343,10 @@ public class Livre implements Visualisable, Descriptible<Livre> {
     public boolean verfier(String s) {
         return false;
     }
-    
+
+    @Override
+    public Modele_Contact<? extends Descriptible> getModeleContact() throws IllegalAccessException {
+        return null;
+    }
+
 }
