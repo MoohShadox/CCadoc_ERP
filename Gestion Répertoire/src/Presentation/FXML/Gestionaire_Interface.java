@@ -1,6 +1,7 @@
 package Presentation.FXML;
 
 import Interfaces.Controllable;
+import Presentation.Controller.Gestionnaire_Repertoire;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -36,11 +37,11 @@ public class Gestionaire_Interface {
     Considérant que c'est les 3 utilisations les plus courantes que je fais d'un controlleur c'est suffisant pour économiser max de code (voir le main)
      */
 
-    public Controllable switchPanel(String fichier, String titre) throws IOException {
+    public Gestionnaire_Repertoire switchPanel(String fichier, String titre) throws IOException {
         FXMLLoader loader = new FXMLLoader ( );
         loader.setLocation ( Main.class.getResource ( fichier ) );
         Parent root = loader.load ( );
-        Controllable FOP = loader.getController ( );
+        Gestionnaire_Repertoire FOP = loader.getController ( );
         PS.setTitle ( titre );
         moveStage(PS,root);
         Scene scene = new Scene(root);

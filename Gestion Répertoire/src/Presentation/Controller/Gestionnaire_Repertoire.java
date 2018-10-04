@@ -17,7 +17,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-public abstract class Gestionnaire_Repertoire extends WindowButtons implements Controllable<Contact> {
+public abstract class Gestionnaire_Repertoire extends WindowButtons  {
+
+    public abstract void provideTable() throws IllegalAccessException;
 
     public void  customResize(TreeTableView view) {
 

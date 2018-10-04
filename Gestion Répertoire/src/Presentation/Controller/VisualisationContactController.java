@@ -16,7 +16,6 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.Iterator;
 
 public class VisualisationContactController extends Gestionnaire_Repertoire  {
@@ -42,17 +41,7 @@ public class VisualisationContactController extends Gestionnaire_Repertoire  {
 
 
     @Override
-    public void setCollection(Collection<Contact> T) {
-
-    }
-
-    @Override
-    public void RefreshCollection(Collection<Contact> T) throws IllegalAccessException {
-
-    }
-
-    @Override
-    public void setVisuel() throws IllegalAccessException {
+    public void provideTable() throws IllegalAccessException {
 
         TreeTableColumn<Modele_Contact<? extends Descriptible>,String>  denomination=new TreeTableColumn<>("Dénomination");
         TreeTableColumn<Modele_Contact<? extends Descriptible>,String>  numC=new TreeTableColumn<>("Numéro");

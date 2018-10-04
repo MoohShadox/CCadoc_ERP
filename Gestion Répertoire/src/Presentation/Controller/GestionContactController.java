@@ -13,21 +13,6 @@ import java.util.Collection;
 
 public class GestionContactController extends Gestionnaire_Repertoire{
 
-    @Override
-    public void setCollection(Collection<Contact> T) {
-
-    }
-
-    @Override
-    public void RefreshCollection(Collection<Contact> T) throws IllegalAccessException {
-
-    }
-
-    @Override
-    public void setVisuel() {
-
-    }
-
     @FXML
     private ListView<SimpleStringProperty> ListMail = new ListView<>();
     @FXML
@@ -38,6 +23,12 @@ public class GestionContactController extends Gestionnaire_Repertoire{
     private JFXTextField denomination;
     @FXML
     private JFXTextField adresse;
+
+    @Override
+    public void provideTable() throws IllegalAccessException {
+
+    }
+
     @FXML
     private JFXTextField type;
     @FXML
