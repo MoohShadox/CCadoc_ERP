@@ -58,6 +58,10 @@ public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
         return "URL";
     }
 
+    public String getName() {
+        return "DESCRIPTION_URL";
+    }
+
     @Override
     public SiteWeb buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
         SiteWeb SW = new SiteWeb();

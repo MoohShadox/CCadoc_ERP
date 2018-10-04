@@ -8,5 +8,5 @@ public interface Controllable<Type> {
 
     void RefreshCollection(Collection <Type> T) throws IllegalAccessException;
 
-    void setVisuel();
+    void setVisuel() throws IllegalAccessException;
 }

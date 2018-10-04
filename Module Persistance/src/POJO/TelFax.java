@@ -61,6 +61,9 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
         return "NUMERO";
     }
 
+    public String getName() {
+        return "TELFAX";
+    }
 
     @Override
     public TelFax buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
