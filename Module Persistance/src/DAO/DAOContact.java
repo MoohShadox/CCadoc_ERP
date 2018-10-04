@@ -3,15 +3,13 @@ package DAO;
 import Connections.ConnectionOrcl;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
-import POJO.Contact;
-import POJO.Mail;
-import POJO.SiteWeb;
-import POJO.TelFax;
+import POJO.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class DAOContact extends GenericDAO<Contact> {
 
@@ -133,6 +131,15 @@ public class DAOContact extends GenericDAO<Contact> {
 
     @Override
     public Collection<Contact> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD, NonExistantDansLaBDD {
-        return null;
+        LinkedList<Contact> C = new LinkedList<>();
+        Statement S = c.createStatement();
+        ResultSet RS = S.executeQuery("SELECT NUMC FROM CONTACT");
+
+        while(RS.next()){
+            Contact c = new Contact();
+            c = recuperer(RS.getString(1));
+            C.add(c);
+        }
+        return C;
     }
 }

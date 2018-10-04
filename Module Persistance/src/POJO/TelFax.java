@@ -15,7 +15,6 @@ import java.util.HashMap;
 public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     private String numero;
     private boolean telfax;
-    private Contact contact;
 
     public String getNumero() {
         return numero;
@@ -91,6 +90,11 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     @Override
     public boolean verfier(String s) {
         return false;
+    }
+
+    @Override
+    public Modele_Contact<TelFax> getModeleContact() throws IllegalAccessException {
+        return new Modele_Contact<TelFax>(this);
     }
 }
 

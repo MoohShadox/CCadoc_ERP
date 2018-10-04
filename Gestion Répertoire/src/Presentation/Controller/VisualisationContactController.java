@@ -10,18 +10,6 @@ public class VisualisationContactController extends Gestionnaire_Repertoire {
     @FXML
     private TreeTableView<SimpleStringProperty> TableContact =new TreeTableView<>();
 
-
-
-
-
-
-
-
-
-
-
-
-
     @FXML
     private void fermerFenetre() {
         this.fermerFenetre(TableContact);

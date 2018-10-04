@@ -1,5 +1,6 @@
 package POJO;
 
+import DAO.Modele_Contact;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
@@ -72,7 +73,7 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
             sites.add(s);
     }
 
-    public void removreSiteWeb(SiteWeb s){
+    public void removeSiteWeb(SiteWeb s){
         if(sites.contains(s))
             sites.remove(s);
     }
@@ -161,5 +162,10 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
     @Override
     public boolean verfier(String s) {
         return false;
+    }
+
+    @Override
+    public Modele_Contact<Contact> getModeleContact() throws IllegalAccessException {
+        return null;
     }
 }

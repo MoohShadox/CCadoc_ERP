@@ -23,19 +23,26 @@ public class Modele_Contact<Type extends Descriptible> {
                 @Override
                 public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                     try {
-                        T.Maj_BDD((String) S,newValue,oldValue);
+                        T.Maj_BDD((String) S,newValue,T.getReference());
                     } catch (SQLException | IllegalAccessException | NonExistantDansLaBDD | BuildingException e) {
                         e.printStackTrace();
                     }
                 }
             });
             description.put((String) S,SS);
-            src = T;
         }
-
+        src = T;
     }
 
     public Type getSrc() {
         return src;
+    }
+
+    public void modifierProperty(SimpleStringProperty SS,String S) throws IllegalAccessException {
+        SS.setValue(S);
+    }
+
+    public ObservableMap<String, SimpleStringProperty> getDescription() {
+        return description;
     }
 }
