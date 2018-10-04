@@ -15,6 +15,10 @@
     -fx-border-width: 0px 0px 2px 0px;
 }
 
+.hover-CloseButtonCroix:hover {
+    -fx-background-color: #E53935;
+}
+
 .hover-border-button3:hover {
     -fx-border-color: #FF9E80;
     -fx-border-width: 0px 0px 4px 0px;

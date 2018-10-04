@@ -17,7 +17,7 @@
 
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1303.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.GestionContactController">
    <children>
-      <Pane prefHeight="37.0" prefWidth="1107.0" style="-fx-background-color: FFC619;">
+      <Pane prefHeight="37.0" prefWidth="1283.0" style="-fx-background-color: FFC619;">
          <children>
             <Label layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Gestion D'Informations Du Client" textFill="WHITE">
                <font>
@@ -29,7 +29,7 @@
                   <Image url="@../Assets/Logo.gif" />
                </image>
             </ImageView>
-            <HBox layoutX="1201.0" prefHeight="37.0" prefWidth="92.0">
+            <HBox layoutX="1201.0" prefHeight="36.0" prefWidth="92.0">
                <children>
                   <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../../../../Module%20Gestion%20Inventaire/src/Presentation/CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
                      <graphic>

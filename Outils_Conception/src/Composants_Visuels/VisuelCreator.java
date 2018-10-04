@@ -56,26 +56,6 @@ public class VisuelCreator {
     }
 
 
-    public void  customResize(TableView<?> view,double cellSize) {
-
-        AtomicLong width = new AtomicLong();
-        view.getColumns().forEach(col -> {
-            width.addAndGet((long) col.getWidth());
-        });
-        double tableWidth = view.getWidth();
-
-        if (tableWidth > width.get()) {
-            view.getColumns().forEach(col -> {
-                col.setPrefWidth(col.getWidth() + ((tableWidth - width.get()) / (view.getColumns().size())));
-            });
-        }
-        view.setFixedCellSize(cellSize);
-        view.prefHeightProperty().bind(view.fixedCellSizeProperty().multiply(view.getItems().size()));
-        view.minHeightProperty().bind(view.prefHeightProperty());
-        view.maxHeightProperty().bind(view.prefHeightProperty());
-    }
-
-
     public void  customResize(TableView<?> view) {
 
         AtomicLong width = new AtomicLong();

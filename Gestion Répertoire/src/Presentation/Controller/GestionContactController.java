@@ -9,7 +9,24 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
+import java.util.Collection;
+
 public class GestionContactController extends Gestionnaire_Repertoire{
+
+    @Override
+    public void setCollection(Collection<Contact> T) {
+
+    }
+
+    @Override
+    public void RefreshCollection(Collection<Contact> T) throws IllegalAccessException {
+
+    }
+
+    @Override
+    public void setVisuel() {
+
+    }
 
     @FXML
     private ListView<SimpleStringProperty> ListMail = new ListView<>();

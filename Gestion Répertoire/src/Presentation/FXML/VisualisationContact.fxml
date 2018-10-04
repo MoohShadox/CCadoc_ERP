@@ -24,16 +24,16 @@
             </Label>
             <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="5.0">
                <image>
-                  <Image url="@../../../../Module%20Gestion%20Inventaire/src/Presentation/Assets/Logo.gif" />
+                  <Image url="@../Assets/Logo.gif" />
                </image>
             </ImageView>
-            <HBox layoutX="751.0" layoutY="-1.0" prefHeight="37.0" prefWidth="92.0">
+            <HBox alignment="CENTER" layoutX="746.0" layoutY="-1.0" prefHeight="35.0" prefWidth="97.0">
                <children>
-                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#Iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../../../../Module%20Gestion%20Inventaire/src/Presentation/CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" onAction="#Iconify" prefHeight="39.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="20.0">
                            <image>
-                              <Image url="@../../../../Module%20Gestion%20Inventaire/src/Presentation/Assets/Line'.png" />
+                              <Image url="@../Assets/Line'.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -41,11 +41,11 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../../../../Module%20Gestion%20Inventaire/src/Presentation/CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="48.0" ripplerFill="#7c7979" styleClass="hover-CloseButtonCroix" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="25.0">
                            <image>
-                              <Image url="@../../../../Module%20Gestion%20Inventaire/src/Presentation/Assets/close'.png" />
+                              <Image url="@../Assets/close'.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -54,14 +54,19 @@
                      </cursor>
                   </JFXButton>
                </children>
+               <padding>
+                  <Insets top="1.0" />
+               </padding>
             </HBox>
          </children>
       </Pane>
       <TreeTableView fx:id="TableContact" prefHeight="518.0" prefWidth="965.0" stylesheets="@../CSS/Style.css">
          <styleClass>
-            <String fx:value="column-header" />
             <String fx:value="text" />
+            <String fx:value="tree-cell" />
+            <String fx:value="column-header" />
             <String fx:value="tree-view" />
+            <String fx:value="tree-table-row-cell" />
          </styleClass>
          <VBox.margin>
             <Insets left="10.0" right="10.0" />
