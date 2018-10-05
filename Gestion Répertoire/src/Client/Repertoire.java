@@ -63,16 +63,7 @@ public class Repertoire {
 
         //Partie3 : Ajout de quelque chose ou supression de quelque chose
         //même chose que la modification mais tu supprime et tu ajoute des trucs
-        Mail m=new Mail();
-        m.setAdresseMail("chichi@hotmail.fr");
-        //R.ajouter_conctact(C1);
-        //R.ajouter_mail_contact((long) 7,m);
-        Mail m1=new Mail();
-        m.setNomMail("Racha1");
-        m1.setAdresseMail("rachasi.rs@yahoo.com");
-        m1.setNomMail("Racha ");
-        m1.setTypeC("Ministre");
-        R.modifier_mail((long) 7,m1,m);
+        
         //R.supprimer_Mail_Contact((long) 7,m);;
     }
 
