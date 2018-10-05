@@ -140,6 +140,10 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
         return "NUMC";
     }
 
+    public String getName() {
+        return "DENOMINATION";
+    }
+
     @Override
     public Contact buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
         Contact C = new Contact();

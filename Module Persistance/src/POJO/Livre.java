@@ -17,6 +17,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Livre implements Visualisable, Descriptible<Livre> {
+
     private String ISBN;
     private String titre;
     private String auteur;
@@ -349,4 +350,8 @@ public class Livre implements Visualisable, Descriptible<Livre> {
         return null;
     }
 
+    @Override
+    public String getName() {
+        return null;
+    }
 }

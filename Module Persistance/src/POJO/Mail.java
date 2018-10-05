@@ -67,6 +67,10 @@ public class Mail implements Descriptible<Mail> {
         return "ADRESSE_MAIL";
     }
 
+    public String getName() {
+        return "NOM_MAIL";
+    }
+
     @Override
     public Mail buildFromRepData(HashMap<String, String> H) throws BuildingException, IllegalAccessException {
         Mail M = new Mail();

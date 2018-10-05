@@ -10,4 +10,5 @@ public interface DAOAble<Type> extends Buildable <Type> {
     String getReference();
 
     String getKeyName();
+
 }

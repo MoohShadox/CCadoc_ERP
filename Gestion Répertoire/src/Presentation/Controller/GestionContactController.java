@@ -9,6 +9,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
+import java.util.Collection;
+
 public class GestionContactController extends Gestionnaire_Repertoire{
 
     @FXML
@@ -21,6 +23,12 @@ public class GestionContactController extends Gestionnaire_Repertoire{
     private JFXTextField denomination;
     @FXML
     private JFXTextField adresse;
+
+    @Override
+    public void provideTable() throws IllegalAccessException {
+
+    }
+
     @FXML
     private JFXTextField type;
     @FXML
