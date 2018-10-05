@@ -187,6 +187,10 @@ public class Repertoire {
         return section_mail;
     }
 
+    public ObservableMap<Long, Modele_Contact<Contact>> getContacts() {
+        return contacts;
+    }
+
     public ObservableMap<Modele_Contact<Contact>, ObservableSet<Modele_Contact<TelFax>>> getSection_telfax() {
         return section_telfax;
     }
