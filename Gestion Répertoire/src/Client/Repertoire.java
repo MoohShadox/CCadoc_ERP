@@ -3,6 +3,7 @@ package Client;
 import DAO.*;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
+import Interfaces.Descriptible;
 import POJO.Contact;
 import POJO.Mail;
 import POJO.SiteWeb;
@@ -11,6 +12,7 @@ import javafx.collections.*;
 import javafx.collections.FXCollections;
 import javafx.collections.MapChangeListener;
 import javafx.collections.ObservableMap;
+
 import java.sql.SQLException;
 import java.util.Collection;
 
@@ -152,7 +154,7 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("NOM_MAIL"), newM.getNomMail());
                     MM.getSrc().setNomMail(newM.getNomMail());
                 }
-                if(newM.getTypeC()!=null && !oldM.getTypeC().equalsIgnoreCase(newM.getTypeC())) {
+                if(newM.getTypeC()!=null && !oldM.getTypeC().equals(newM.getTypeC())) {
                     MM.modifierProperty(MM.getDescription().get("TYPEC"), newM.getTypeC());
                     MM.getSrc().setTypeC(newM.getTypeC());
                 }
@@ -167,9 +169,9 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("NUMERO"), newT.getNumero());
                     MM.getSrc().setNumero(newT.getNumero());
                 }
-                if(oldT.isTelfax() != newT.isTelfax()) {
-                    MM.modifierProperty(MM.getDescription().get("TELFAX"), String.valueOf(newT.isTelfax()));
-                    MM.getSrc().setTelfax(newT.isTelfax());
+                if(!oldT.getTelfax().equals(newT.getTelfax())) {
+                    MM.modifierProperty(MM.getDescription().get("TELFAX"), newT.getTelfax());
+                    MM.getSrc().setTelfax(newT.getTelfax());
                 }
             }
         }
@@ -183,7 +185,7 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("URL"), newS.getUrl());
                     MM.getSrc().setUrl(newS.getUrl());
                 }
-                if(newS.getDescription()!=null && !oldS.getDescription().equalsIgnoreCase(newS.getDescription())) {
+                if(newS.getDescription()!=null && !oldS.getDescription().equals(newS.getDescription())) {
                     MM.modifierProperty(MM.getDescription().get("DESCRIPTION_URL"), newS.getDescription());
                     MM.getSrc().setDescription(newS.getDescription());
                 }
