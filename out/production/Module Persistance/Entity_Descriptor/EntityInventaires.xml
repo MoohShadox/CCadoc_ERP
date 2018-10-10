@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityInventaires">
+        <table name="INVENTAIRES" schema="CADOC_ADMIN" catalog=""/>
+        <attributes>
+            <id name="nomInventaire">
+                <column name="NOM_INVENTAIRE" length="100"/>
+            </id>
+            <basic name="nombreOuvrages">
+                <column name="NOMBRE_OUVRAGES" nullable="false" precision="2147483646"/>
+            </basic>
+            <basic name="dateCreation">
+                <column name="DATE_CREATION" nullable="false" length="20"/>
+            </basic>
+            <basic name="finalise">
+                <column name="FINALISE" nullable="false" length="8"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

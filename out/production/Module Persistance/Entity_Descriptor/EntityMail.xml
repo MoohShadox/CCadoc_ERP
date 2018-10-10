@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Database_Entity.EntityMail">
+        <table name="MAIL" schema="CADOC_ADMIN" catalog=""/>
+        <attributes>
+            <id name="adresseMail">
+                <column name="ADRESSE_MAIL" length="25"/>
+            </id>
+            <basic name="nomMail">
+                <column name="NOM_MAIL" nullable="false" length="25"/>
+            </basic>
+            <basic name="typec">
+                <column name="TYPEC" nullable="false" length="25"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
