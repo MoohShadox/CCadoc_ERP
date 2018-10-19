@@ -128,7 +128,7 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerTel" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                        <JFXButton fx:id="supprTel" contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerTel" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
                            <font>
                               <Font name="Impact" size="19.0" />
                            </font>
@@ -178,7 +178,7 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerMail" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                        <JFXButton fx:id="supprMail" contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerMail" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
                            <font>
                               <Font name="Impact" size="19.0" />
                            </font>
@@ -228,7 +228,7 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerSiteW" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                        <JFXButton fx:id="supprSiteW" contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerSiteW" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
                            <font>
                               <Font name="Impact" size="19.0" />
                            </font>
