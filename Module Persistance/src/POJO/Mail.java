@@ -90,7 +90,7 @@ public class Mail implements Descriptible<Mail> {
         DAO<Mail> DM=new DAOMail(new Mail());
         System.out.println(ref);
         Mail M=DM.recuperer(ref);
-        if(!M.getRepositoryAttributs().get(attribut).equals(nouvelle_valeur)){
+        if(!M.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
             switch (attribut){
                 case "ADRESSE_MAIL":M.adresseMail=nouvelle_valeur;
                 break;

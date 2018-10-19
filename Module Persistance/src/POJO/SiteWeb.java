@@ -76,7 +76,7 @@ public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<SiteWeb> DSW = new DAOSiteWeb(new SiteWeb());
         SiteWeb SW= DSW.recuperer(ref);
-        if(!SW.getRepositoryAttributs().get(attribut).equals(nouvelle_valeur)){
+        if(!SW.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
             switch (attribut){
                 case "DESCRIPTION_URL":SW.description=nouvelle_valeur;
                     break;

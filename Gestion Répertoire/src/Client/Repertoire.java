@@ -143,7 +143,7 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("NOM_MAIL"), newM.getNomMail());
                     MM.getSrc().setNomMail(newM.getNomMail());
                 }
-                if(newM.getTypeC()!=null && !oldM.getTypeC().equals(newM.getTypeC())) {
+                if(newM.getTypeC()!=null && !oldM.getTypeC().equalsIgnoreCase(newM.getTypeC())) {
                     MM.modifierProperty(MM.getDescription().get("TYPEC"), newM.getTypeC());
                     MM.getSrc().setTypeC(newM.getTypeC());
                 }
@@ -158,9 +158,9 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("NUMERO"), newT.getNumero());
                     MM.getSrc().setNumero(newT.getNumero());
                 }
-                if(!oldT.getTelfax().equals(newT.getTelfax())) {
-                    MM.modifierProperty(MM.getDescription().get("TELFAX"), String.valueOf(newT.getTelfax()));
-                    MM.getSrc().setTelfax(newT.getTelfax());
+                if(oldT.isTelfax() != newT.isTelfax()) {
+                    MM.modifierProperty(MM.getDescription().get("TELFAX"), String.valueOf(newT.isTelfax()));
+                    MM.getSrc().setTelfax(newT.isTelfax());
                 }
             }
         }
@@ -174,7 +174,7 @@ public class Repertoire {
                     MM.modifierProperty(MM.getDescription().get("URL"), newS.getUrl());
                     MM.getSrc().setUrl(newS.getUrl());
                 }
-                if(newS.getDescription()!=null && !oldS.getDescription().equals(newS.getDescription())) {
+                if(newS.getDescription()!=null && !oldS.getDescription().equalsIgnoreCase(newS.getDescription())) {
                     MM.modifierProperty(MM.getDescription().get("DESCRIPTION_URL"), newS.getDescription());
                     MM.getSrc().setDescription(newS.getDescription());
                 }

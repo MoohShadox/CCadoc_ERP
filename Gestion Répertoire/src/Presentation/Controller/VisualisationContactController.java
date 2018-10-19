@@ -12,8 +12,9 @@ import POJO.TelFax;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.TextFieldTreeTableCell;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeTableColumn;
+import javafx.scene.control.TreeTableView;
 import java.sql.SQLException;
 import java.util.Iterator;
 
@@ -76,68 +77,18 @@ public class VisualisationContactController extends Gestionnaire_Repertoire  {
             Troot.getChildren().add(Titem);
         }
         numC.setCellValueFactory(
-                (TreeTableColumn.CellDataFeatures<Modele_Contact<? extends Descriptible>,String> param) ->
-                        new SimpleStringProperty(""+param.getValue().getValue().getDescription().get(param.getValue().getValue().getSrc().getKeyName()).get())
+                (TreeTableColumn.CellDataFeatures<Modele_Contact<? extends Descriptible>,String> param)
+                        ->
+                    new SimpleStringProperty(""+param.getValue().getValue().getDescription().get(param.getValue().getValue().getSrc().getKeyName()).get())
         );
         denomination.setCellValueFactory(
-                (TreeTableColumn.CellDataFeatures<Modele_Contact<? extends Descriptible>,String> param)->
-                        new SimpleStringProperty("" + param.getValue().getValue().getDescription().get(param.getValue().getValue().getSrc().getName()).get())
+                (TreeTableColumn.CellDataFeatures<Modele_Contact<? extends Descriptible>,String> param)
+                        -> new SimpleStringProperty(""+param.getValue().getValue().getDescription().get(param.getValue().getValue().getSrc().getName()).get())
         );
-        numC.setCellFactory(TextFieldTreeTableCell.forTreeTableColumn());
-        //une fonction est censé remplacer la ligne qu est au dessus de ça, mais ça marche pas a cause de no "update Item"
-        /*
-        numC.addEventHandler(new EventType<MouseEvent>(),new EventHandler<MouseEvent>(){
-            @Override
-            public void handle(MouseEvent event) {
-                TextField tf=new TextField();
-                tf.setStyle("-fx-border-color: black");
-                numC.setCellFactory(new Callback<TreeTableColumn<Modele_Contact<? extends Descriptible>, String>, TreeTableCell<Modele_Contact<? extends Descriptible>, String>>() {
-                    @Override
-                    public TreeTableCell<Modele_Contact<? extends Descriptible>, String> call(TreeTableColumn<Modele_Contact<? extends Descriptible>, String> param) {
-                        TreeTableCell<Modele_Contact<? extends Descriptible>, String> T=new TreeTableCell<Modele_Contact<? extends Descriptible>, String>();
-                        T.setGraphic(tf);
-                        return T;
-                    }
-                });
-            }
-        });
-        */
-        denomination.setCellFactory((TextFieldTreeTableCell.forTreeTableColumn()));
-        numC.setOnEditCommit(new javafx.event.EventHandler<TreeTableColumn.CellEditEvent<Modele_Contact<? extends Descriptible>,String>>() {
-            @Override
-            public void handle(TreeTableColumn.CellEditEvent<Modele_Contact<? extends Descriptible>, String> event) {
-                if(!(event.getRowValue().getValue().getSrc() instanceof Contact)) {
-                    TreeItem<Modele_Contact<? extends Descriptible>> currentItem = TableContact.getTreeItem(event.getTreeTablePosition().getRow());
-                    long c = Long.valueOf(currentItem.getParent().getValue().getDescription().get("NUMC").get());
-                    try {
-                        modifierRow(R,true,c, event.getRowValue().getValue(), event.getNewValue());
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        });
-        denomination.setOnEditCommit(new javafx.event.EventHandler<TreeTableColumn.CellEditEvent<Modele_Contact<? extends Descriptible>,String>>() {
-            @Override
-            public void handle(TreeTableColumn.CellEditEvent<Modele_Contact<? extends Descriptible>, String> event) {
-                if(!(event.getRowValue().getValue().getSrc() instanceof Contact)) {
-                    TreeItem<Modele_Contact<? extends Descriptible>> currentItem = TableContact.getTreeItem(event.getTreeTablePosition().getRow());
-                    long c = Long.valueOf(currentItem.getParent().getValue().getDescription().get("NUMC").get());
-                    try {
-                        modifierRow(R,false,c, event.getRowValue().getValue(), event.getNewValue());
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        });
         TableContact.setRoot(Troot);
         TableContact.setShowRoot(true);
-        TableContact.setEditable(true);
+
         TableContact.setColumnResizePolicy((param -> true));
         Platform.runLater(() -> customResize(TableContact));
     }
-
 }
-
-
