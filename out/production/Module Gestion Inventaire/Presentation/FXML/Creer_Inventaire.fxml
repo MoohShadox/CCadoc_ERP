@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="269.0" prefWidth="625.0" style="-fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.CreerInventaire">
+    <children>
+        <Pane prefHeight="36.0" prefWidth="563.0" style="-fx-background-color: FFC619;">
+            <children>
+                <Label layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Création et modification d'un inventaire" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="19.0" />
+                    </font>
+                </Label>
+                <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="581.0" onAction="#fermerFenetre" prefHeight="31.0" prefWidth="35.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT">
+                    <padding>
+                        <Insets right="2.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0">
+                            <image>
+                                <Image url="@../Assets/close'.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="5.0">
+                    <image>
+                        <Image url="@../Assets/Logo.gif" />
+                    </image>
+                </ImageView>
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </Pane>
+        <Pane prefHeight="233.0" prefWidth="442.0" style="-fx-background-color: white;">
+            <children>
+                <TextField fx:id="ChampNom" focusTraversable="false" layoutX="37.0" layoutY="100.0" onAction="#MAJChamp" onKeyTyped="#MAJChamp" prefHeight="32.0" prefWidth="423.0" style="-fx-border-color: FFC619;">
+                    <font>
+                        <Font name="Impact" size="17.0" />
+                    </font>
+                </TextField>
+                <JFXButton fx:id="BoutonCreer" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="476.0" layoutY="99.0" prefHeight="37.0" prefWidth="104.0" ripplerFill="#f2d86800" style="-fx-background-color: FFC619;" styleClass="hover-border-button2" stylesheets="@../CSSstyling/Style.css" text="Créer" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</VBox>

@@ -16,6 +16,7 @@ public class Mouvements_Externes extends Mouvement_Stock {
         super.livres = MS.livres;
         super.reference = MS.reference;
         super.source = MS.source;
+        super.lien_bon = MS.lien_bon;
     }
 
 

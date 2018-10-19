@@ -114,4 +114,13 @@ public class StockDAO extends GenericDAO<Stock> {
     public Collection<Stock> load() throws SQLException, BuildingException, IllegalAccessException, NonExistantDansLaBDD {
         return null;
     }
+
+    public void ajouterStock(Livre L){
+
+    }
+
+
+
+
+
 }

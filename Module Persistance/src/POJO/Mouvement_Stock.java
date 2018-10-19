@@ -13,8 +13,9 @@ import java.util.HashMap;
 import DAO.*;
 
 public class Mouvement_Stock implements DAOAble<Mouvement_Stock> {
+    protected String lien_bon;
     protected String reference;
-    protected Stock source;
+    protected Destination source;
     protected Destination destination;
     protected Date date;
     protected HashMap<Livre,Integer> livres = new HashMap<>();
@@ -22,11 +23,16 @@ public class Mouvement_Stock implements DAOAble<Mouvement_Stock> {
 
     //Setters et Getters
 
-    public Stock getSource() {
+
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
+
+    public Destination getSource() {
         return source;
     }
 
-    public void setSource(Stock source) {
+    public void setSource(Destination source) {
         this.source = source;
     }
 
@@ -72,6 +78,8 @@ public class Mouvement_Stock implements DAOAble<Mouvement_Stock> {
         H.put("SOURCE",source.getReference());
         H.put("DESTINATION",destination.getReference());
         H.put("NUM_E",employe.getNumEmploye());
+        if(lien_bon!=null)
+            H.put("LIEN_BON",lien_bon);
         return H;
     }
 
@@ -113,8 +121,8 @@ public class Mouvement_Stock implements DAOAble<Mouvement_Stock> {
             }
         }
         try {
-            DAO<Stock> DS = new StockDAO(new Stock());
-            MS.source = DS.recuperer(H.get("SOURCE"));
+            DAO<Destination> DS = new DAODestination();
+            MS.source = (Source) DS.recuperer(H.get("SOURCE"));
         } catch (SQLException | NonExistantDansLaBDD e) {
             e.printStackTrace();
         }

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="745.0" prefWidth="887.0" spacing="30.0" style="-fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSSstyling/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.Completion_Inventaire">
+   <children>
+      <Pane prefHeight="36.0" prefWidth="843.0" style="-fx-background-color: FFC619;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Complétion Des Domaines" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="5.0">
+               <image>
+                  <Image url="@../Assets/Logo.gif" />
+               </image>
+            </ImageView>
+            <HBox layoutX="795.0" prefHeight="37.0" prefWidth="81.0">
+               <children>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#Iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../Assets/Line'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@../Assets/close'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <VBox prefHeight="667.0" prefWidth="887.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="Table" prefHeight="517.0" prefWidth="867.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Complétion des domaines" textFill="#635e5e" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Impact" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="526.0" spacing="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXComboBox fx:id="CBox1" focusColor="#5b5851" prefHeight="25.0" prefWidth="178.0" unFocusColor="#ffc619" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <Pane fx:id="Champ1" prefHeight="25.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXComboBox fx:id="CBox2" focusColor="#5b5851" prefHeight="25.0" prefWidth="178.0" unFocusColor="#ffc619" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <Pane fx:id="Champ2" prefHeight="25.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXComboBox fx:id="CBox3" focusColor="#5b5851" prefHeight="25.0" prefWidth="178.0" unFocusColor="#ffc619" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <Pane fx:id="Champ3" prefHeight="25.0" prefWidth="386.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXCheckBox checkedColor="#26a69a" prefHeight="18.0" prefWidth="231.0" text="Appliquer la complétion" textFill="#645e5e" unCheckedColor="#ffc619" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Impact" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="205.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton onAction="#Appliquer_Action" prefHeight="37.0" prefWidth="125.0" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" text="Appliquer" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Impact" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="380.0" layoutY="10.0" onAction="#ENRICHIR_ACTION" prefHeight="37.0" prefWidth="125.0" style="-fx-background-color: FFC619;" styleClass="hover-border-button3" text="Enrichir" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Impact" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

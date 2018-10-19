@@ -18,13 +18,13 @@
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <TabPane prefHeight="354.0" prefWidth="830.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane prefHeight="376.0" prefWidth="830.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
                 <Tab text="Gestion Entrées">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <TableView layoutX="445.0" layoutY="-1.0" prefHeight="320.0" prefWidth="379.0">
+                              <TableView layoutX="442.0" layoutY="2.0" prefHeight="320.0" prefWidth="379.0">
                                 <columns>
                                   <TableColumn prefWidth="75.0" text="ISBN" />
                                   <TableColumn prefWidth="75.0" text="Titre" />
@@ -39,14 +39,14 @@
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Button layoutX="153.0" layoutY="273.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" text="Enregistrer l'entrée" />
+                              <Button layoutX="156.0" layoutY="257.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="152.0" text="Enregistrer l'entrée" />
                               <TextField layoutX="168.0" layoutY="138.0" prefHeight="25.0" prefWidth="245.0" />
                               <Label layoutX="90.0" layoutY="135.0" prefHeight="27.0" prefWidth="76.0" text="Source : ">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <CheckBox layoutX="170.0" layoutY="178.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="142.0" text="Enregistrer le contact" />
+                              <CheckBox layoutX="170.0" layoutY="178.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="170.0" text="Enregistrer le contact" />
                               <Label layoutX="73.0" layoutY="80.0" prefHeight="27.0" prefWidth="103.0" text="Inventaire : ">
                                  <font>
                                     <Font size="18.0" />
@@ -78,7 +78,7 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="289.0" prefWidth="828.0">
          <children>
-            <TableView fx:id="Historique_Mouvements" prefHeight="250.0" prefWidth="828.0">
+            <TableView fx:id="Historique_Mouvements" layoutY="34.0" prefHeight="216.0" prefWidth="828.0">
               <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
                 <TableColumn prefWidth="75.0" text="C2" />

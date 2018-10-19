@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="inventairePane" prefHeight="600.0" prefWidth="1350.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSSstyling/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.Realiser_Inventaire_Controlleur">
+    <children>
+        <Pane layoutX="8.0" layoutY="38.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="736.0" style="-fx-border-color: #E0E0E0; -fx-border-width: 0px 1.5px 0px 0px;">
+            <children>
+                <GridPane fx:id="InformationGridPane" alignment="CENTER" hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="507.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="217.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="260.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="5.0" minHeight="0.0" prefHeight="0.0" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="51.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="9.0" prefHeight="51.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="9.0" prefHeight="52.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="53.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="52.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Auteur" textFill="#635e5e" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Editeur" textFill="#635e5e" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="34.0" prefWidth="251.0" style="-fx-font-weight: bold;" text="Titre " textFill="#635e5e" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Date De Parrution" textFill="#635e5e" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="POJO.Nombre de stocks ou il figure" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Quantité" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="211.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="152.0" style="-fx-font-weight: bold;" text="Prix libarairie" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="239.0" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="152.0" style="-fx-font-weight: bold;" text="Prix FNAC" textFill="#635e5e" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="Titre" focusColor="#e0e0e0" focusTraversable="false" prefHeight="35.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Auteur" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="19.0" prefHeight="37.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Editeur" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="19.0" prefHeight="36.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Date" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="118.0" prefHeight="37.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="NbStock" focusColor="#e0e0e0" focusTraversable="false" prefHeight="34.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Quantite" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="220.0" prefHeight="34.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Prix" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="273.0" prefHeight="34.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="PrixFnac" focusColor="#e0e0e0" focusTraversable="false" layoutX="231.0" layoutY="325.0" prefHeight="32.0" prefWidth="237.0" unFocusColor="#e0e0e0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                            <font>
+                                <Font name="Impact" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </GridPane>
+                <ImageView fx:id="Couverture" fitHeight="265.0" fitWidth="171.0" layoutX="545.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                    <effect>
+                        <DropShadow color="#f8f6af" />
+                    </effect>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="1135.0" layoutY="69.0" prefHeight="441.0" prefWidth="208.0">
+            <children>
+                <Pane fx:id="RecensementPane" layoutX="9.0" layoutY="66.0" prefHeight="361.0" prefWidth="186.0" style="-fx-background-color: white;">
+                    <children>
+                        <JFXTextField fx:id="IsbnField" focusColor="#646464" focusTraversable="false" labelFloat="true" layoutX="19.0" layoutY="102.0" prefHeight="25.0" prefWidth="149.0" promptText="ISBN" unFocusColor="#bfb0b0" />
+                        <JFXTextField fx:id="QteField" focusColor="#646464" focusTraversable="false" labelFloat="true" layoutX="19.0" layoutY="215.0" prefHeight="25.0" prefWidth="150.0" promptText="Quantité" unFocusColor="#bfb0b0" />
+                        <JFXButton focusTraversable="false" layoutX="5.0" layoutY="320.0" onAction="#Ajout_Recensement" prefHeight="36.0" prefWidth="181.0" ripplerFill="#595c61" style="-fx-background-color: FFC619;" styleClass="hover-border-button2" text="Ajouter au Recensement" textFill="WHITE">
+                            <font>
+                                <Font name="Impact" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="2.0" />
+                            </padding>
+                        </JFXButton>
+                    </children>
+                    <effect>
+                        <DropShadow color="#e0e0e0" />
+                    </effect>
+                </Pane>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="85.0" layoutY="14.0">
+                    <image>
+                        <Image url="@../Assets/Add.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <HBox alignment="CENTER" layoutX="67.0" layoutY="543.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="618.0">
+            <children>
+                <JFXButton alignment="CENTER" focusTraversable="false" onAction="#AjoutBDD" prefHeight="30.0" prefWidth="228.0" ripplerFill="#595c61" style="-fx-background-color: FFC619;" styleClass="hover-border-button2" text="Ajouter a la Base De Données" textFill="WHITE" HBox.hgrow="SOMETIMES">
+                    <HBox.margin>
+                        <Insets left="-200.0" right="100.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Impact" size="17.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+            <Line endX="-199.8294219970703" endY="-84.11885070800781" startX="-200.00099182128906" startY="-122.60414123535156" stroke="#e0e0e0" strokeWidth="4.0">
+               <HBox.margin>
+                  <Insets left="-20.0" right="80.0" />
+               </HBox.margin>
+            </Line>
+                <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#Enrichir" prefHeight="34.0" prefWidth="83.0" ripplerFill="#595c61" style="-fx-background-color: FFC619;" styleClass="hover-border-button2" text="Enrichir" textFill="WHITE" HBox.hgrow="SOMETIMES">
+                    <font>
+                        <Font name="Impact" size="17.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+            <padding>
+                <Insets left="80.0" right="-80.0" />
+            </padding>
+        </HBox>
+        <Pane layoutX="750.0" layoutY="69.0" prefHeight="441.0" prefWidth="385.0">
+            <children>
+                <Pane layoutX="8.0" layoutY="66.0" prefHeight="361.0" prefWidth="368.0" style="-fx-background-color: white;">
+                    <children>
+                        <TableView fx:id="TableProgression" focusTraversable="false" prefHeight="314.0" prefWidth="370.0" />
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="143.0" layoutY="321.0" onAction="#Visualisation" prefHeight="25.0" prefWidth="110.0" ripplerFill="#595c61" style="-fx-background-color: FFC619;" styleClass="hover-border-button2" text="Visualiser" textFill="WHITE">
+                            <font>
+                                <Font name="Impact" size="17.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </JFXButton>
+                    </children>
+               <effect>
+                  <DropShadow color="#e0e0e0" />
+               </effect>
+                </Pane>
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="190.0" layoutY="14.0">
+                    <image>
+                        <Image url="@../Assets/Grid.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Line endX="1150.0" startX="-105.0" stroke="#ffc437" strokeWidth="2.0" />
+        <Pane layoutY="-1.0" prefHeight="36.0" prefWidth="1350.0" style="-fx-background-color: FFC619; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 0px 5px;">
+            <children>
+                <Label fx:id="titreDeFenetre" layoutX="62.0" layoutY="5.0" prefHeight="31.0" prefWidth="1177.0" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="19.0" />
+                    </font>
+                </Label>
+                <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="1306.0" layoutY="7.0" onAction="#fermerFenetre" prefHeight="28.0" prefWidth="36.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSSstyling/Style.css" textFill="TRANSPARENT">
+                    <padding>
+                        <Insets right="2.0" />
+                    </padding>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0">
+                            <image>
+                                <Image url="@../Assets/close'.png" />
+                            </image>
+                        </ImageView>
+               </graphic>
+                </JFXButton>
+                <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="8.0">
+                    <image>
+                        <Image url="@../Assets/Logo.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</Pane>
