@@ -399,7 +399,6 @@ public class DashBordController extends Controller<Inventorier, Modele<Inventori
             for(HBox H:Liste_Lignes){
                 for(Node N : H.getChildren()){
                     N.setOnMouseClicked(getSupprimerHandler((InventaireVisuel) N));
-                    //TODO Changer la coloration pour colorer tout les carrés en rouge ce qui veut dire que le prochain sur lequel on va cliquer serra supprimer
                     N.setStyle("-fx-border-color: #E53935");
                     suppr.setStyle("-fx-background-color: #E53935");
                 }
