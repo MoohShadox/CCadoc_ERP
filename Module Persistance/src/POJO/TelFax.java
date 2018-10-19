@@ -16,6 +16,13 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     private String numero;
     private String telfax;
 
+    public TelFax() {}
+
+    public TelFax(String numero, String telfax) {
+        this.numero = numero;
+        this.telfax = telfax;
+    }
+
     public String getNumero() {
         return numero;
     }
@@ -79,14 +86,12 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<TelFax> DTF = new DAOTelFax(new TelFax());
         TelFax TF= DTF.recuperer(ref);
-        if(!TF.getRepositoryAttributs().get(attribut).equals(nouvelle_valeur)){
-            switch (attribut){
+        switch (attribut){
                 case "NUMERO":TF.numero=nouvelle_valeur;
                     break;
                 case "TELFAX":TF.telfax=nouvelle_valeur;
                     break;
             }
-        }
         DTF.mettre_a_jour(TF,ref);
     }
 

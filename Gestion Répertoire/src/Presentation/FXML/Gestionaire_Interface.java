@@ -1,5 +1,7 @@
 package Presentation.FXML;
 
+import Exceptions.BuildingException;
+import Exceptions.NonExistantDansLaBDD;
 import Interfaces.Controllable;
 import Presentation.Controller.Gestionnaire_Repertoire;
 import javafx.event.EventHandler;
@@ -8,10 +10,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class Gestionaire_Interface {
 

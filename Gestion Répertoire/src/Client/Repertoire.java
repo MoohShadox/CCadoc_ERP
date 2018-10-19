@@ -130,38 +130,33 @@ public class Repertoire {
         }
     }
 
-
     public void modifier_mail(Long c,Mail oldM, Mail newM) throws IllegalAccessException {
         for(Modele_Contact<Mail> MM : section_mail.get(contacts.get(c))){
             //Cherche le modele mail qui a la même adresse que le mail a modifier
-            if(oldM.getAdresseMail().equalsIgnoreCase(MM.getSrc().getAdresseMail())){
-                if(newM.getAdresseMail()!=null && !oldM.getAdresseMail().equalsIgnoreCase(newM.getAdresseMail())) {
+            if(oldM.getAdresseMail().equals(MM.getSrc().getAdresseMail())){
+                if(newM.getAdresseMail()!=null && !oldM.getAdresseMail().equals(newM.getAdresseMail())) {
                     MM.modifierProperty(MM.getDescription().get("ADRESSE_MAIL"), newM.getAdresseMail());
                     MM.getSrc().setAdresseMail(newM.getAdresseMail());
                 }
-                if(newM.getNomMail()!=null && !oldM.getNomMail().equalsIgnoreCase(newM.getNomMail())) {
+                if(newM.getNomMail()!=null && !oldM.getNomMail().equals(newM.getNomMail())) {
                     MM.modifierProperty(MM.getDescription().get("NOM_MAIL"), newM.getNomMail());
                     MM.getSrc().setNomMail(newM.getNomMail());
                 }
-                if(newM.getTypeC()!=null && !oldM.getTypeC().equals(newM.getTypeC())) {
-                    MM.modifierProperty(MM.getDescription().get("TYPEC"), newM.getTypeC());
-                    MM.getSrc().setTypeC(newM.getTypeC());
-                }
+                MM.modifierProperty(MM.getDescription().get("TYPEC"), newM.getTypeC());
+                MM.getSrc().setTypeC(newM.getTypeC());
             }
         }
     }
 
     public void modifier_telFax(Long c,TelFax oldT, TelFax newT) throws IllegalAccessException {
         for(Modele_Contact<TelFax> MM : section_telfax.get(contacts.get(c))){
-            if(oldT.getNumero().equalsIgnoreCase(MM.getSrc().getNumero())){
-                if(newT.getNumero()!=null && !oldT.getNumero().equalsIgnoreCase(newT.getNumero())) {
+            if(oldT.getNumero().equals(MM.getSrc().getNumero())){
+                if(newT.getNumero()!=null && !oldT.getNumero().equals(newT.getNumero())) {
                     MM.modifierProperty(MM.getDescription().get("NUMERO"), newT.getNumero());
                     MM.getSrc().setNumero(newT.getNumero());
                 }
-                if(!oldT.getTelfax().equals(newT.getTelfax())) {
-                    MM.modifierProperty(MM.getDescription().get("TELFAX"), String.valueOf(newT.getTelfax()));
-                    MM.getSrc().setTelfax(newT.getTelfax());
-                }
+                MM.modifierProperty(MM.getDescription().get("TELFAX"),newT.getTelfax());
+                MM.getSrc().setTelfax(newT.getTelfax());
             }
         }
     }
@@ -170,14 +165,12 @@ public class Repertoire {
     public void modifier_siteWeb(Long c,SiteWeb oldS, SiteWeb newS) throws IllegalAccessException {
         for(Modele_Contact<SiteWeb> MM : section_sitew.get(contacts.get(c))){
             if(oldS.getUrl().equalsIgnoreCase(MM.getSrc().getUrl())){
-                if(newS.getUrl()!=null && !oldS.getUrl().equalsIgnoreCase(newS.getUrl())) {
+                if(newS.getUrl()!=null && !oldS.getUrl().equals(newS.getUrl())) {
                     MM.modifierProperty(MM.getDescription().get("URL"), newS.getUrl());
                     MM.getSrc().setUrl(newS.getUrl());
                 }
-                if(newS.getDescription()!=null && !oldS.getDescription().equals(newS.getDescription())) {
-                    MM.modifierProperty(MM.getDescription().get("DESCRIPTION_URL"), newS.getDescription());
-                    MM.getSrc().setDescription(newS.getDescription());
-                }
+                MM.modifierProperty(MM.getDescription().get("DESCRIPTION_URL"), newS.getDescription());
+                MM.getSrc().setDescription(newS.getDescription());
             }
         }
     }

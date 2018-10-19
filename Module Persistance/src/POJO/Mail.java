@@ -5,6 +5,9 @@ import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
 import Interfaces.DAOAble;
 import Interfaces.Descriptible;
+import javafx.beans.Observable;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.util.Callback;
 
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -12,6 +15,14 @@ import java.util.HashMap;
 public class Mail implements Descriptible<Mail> {
     private String adresseMail;
     private String typeC, nomMail;
+
+    public Mail() {}
+
+    public Mail(String adresseMail, String typeC, String nomMail) {
+        this.adresseMail = adresseMail;
+        this.typeC = typeC;
+        this.nomMail = nomMail;
+    }
 
     public String getAdresseMail() {
         return adresseMail;
@@ -88,10 +99,8 @@ public class Mail implements Descriptible<Mail> {
     @Override
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<Mail> DM=new DAOMail(new Mail());
-        System.out.println(ref);
         Mail M=DM.recuperer(ref);
-        if(!M.getRepositoryAttributs().get(attribut).equals(nouvelle_valeur)){
-            switch (attribut){
+        switch (attribut){
                 case "ADRESSE_MAIL":M.adresseMail=nouvelle_valeur;
                 break;
                 case "NOM_MAIL":M.nomMail=nouvelle_valeur;
@@ -99,7 +108,6 @@ public class Mail implements Descriptible<Mail> {
                 case "TYPEC":M.typeC = nouvelle_valeur;
                 break;
             }
-        }
         DM.mettre_a_jour(M,ref);
     }
 

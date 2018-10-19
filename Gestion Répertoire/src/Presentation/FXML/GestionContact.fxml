@@ -15,9 +15,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1303.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.GestionContactController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1329.0" spacing="20.0" style="-fx-background-color: white; -fx-border-color: #635e5e; -fx-border-width: 5px 5px 5px 5px;" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.GestionContactController">
    <children>
-      <Pane prefHeight="37.0" prefWidth="1283.0" style="-fx-background-color: FFC619;">
+      <Pane prefHeight="38.0" prefWidth="1319.0" style="-fx-background-color: FFC619;">
          <children>
             <Label layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Gestion D'Informations Du Client" textFill="WHITE">
                <font>
@@ -29,9 +29,9 @@
                   <Image url="@../Assets/Logo.gif" />
                </image>
             </ImageView>
-            <HBox layoutX="1201.0" prefHeight="36.0" prefWidth="92.0">
+            <HBox layoutX="1227.0" prefHeight="37.0" prefWidth="92.0">
                <children>
-                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../../../../Module%20Gestion%20Inventaire/src/Presentation/CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#iconify" prefHeight="43.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSS/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="20.0">
                            <image>
@@ -43,7 +43,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../../../../Module%20Gestion%20Inventaire/src/Presentation/CSSstyling/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="42.0" prefWidth="49.0" ripplerFill="#7c7979" styleClass="hover-CloseButtonCroix" stylesheets="@../CSS/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="25.0">
                            <image>
@@ -68,40 +68,86 @@
                         <Font name="Impact" size="20.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="denomination" editable="false" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="36.0" prefWidth="298.0" promptText="Dénomination" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
+                  <JFXTextField fx:id="denomination" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="36.0" prefWidth="298.0" promptText="Dénomination" styleClass="text-field" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
+                     <font>
+                        <Font name="Impact" size="15.0" />
+                     </font>
                   </JFXTextField>
-                  <JFXTextField fx:id="adresse" editable="false" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="112.0" prefHeight="36.0" prefWidth="298.0" promptText="Adresse" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
+                  <JFXTextField fx:id="adresse" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="112.0" prefHeight="36.0" prefWidth="298.0" promptText="Adresse" styleClass="text-field" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
+                     <font>
+                        <Font name="Impact" size="15.0" />
+                     </font>
                   </JFXTextField>
-                  <JFXTextField fx:id="type" editable="false" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="198.0" prefHeight="36.0" prefWidth="298.0" promptText="Type" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
+                  <JFXTextField fx:id="type" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="10.0" layoutY="198.0" prefHeight="36.0" prefWidth="298.0" promptText="Type" styleClass="text-field" unFocusColor="#e0e0e0" VBox.vgrow="ALWAYS">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
+                     <font>
+                        <Font name="Impact" size="15.0" />
+                     </font>
                   </JFXTextField>
                </children>
             </VBox>
-            <Line endX="-96.12155151367188" endY="371.7953796386719" startX="-96.12142944335938" startY="-75.49752044677734" stroke="#e0e0e0" />
-            <VBox prefHeight="550.0" prefWidth="783.0" spacing="10.0" HBox.hgrow="ALWAYS">
+            <Line endX="-96.12141418457031" endY="316.7953796386719" startX="-96.12142944335938" startY="-75.49752044677734" stroke="#e0e0e0" />
+            <VBox prefHeight="511.0" prefWidth="812.0" spacing="10.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label prefHeight="46.0" prefWidth="294.0" text="Numéros De Téléphone :" textFill="#9a9696" wrapText="true" VBox.vgrow="ALWAYS">
                      <font>
                         <Font name="Impact" size="20.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="ListTel" prefHeight="447.0" prefWidth="308.0">
+                  <ListView fx:id="ListTel" editable="true" prefHeight="448.0" prefWidth="312.0">
                      <styleClass>
                         <String fx:value="list-cell" />
                         <String fx:value="list-view" />
                      </styleClass>
                   </ListView>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="205.0" spacing="30.0">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#ajoutTel" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #A5D6A7;" text="Ajouter" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@../Assets/Plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerTel" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="29.0">
+                                 <image>
+                                    <Image url="@../Assets/Minus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
-            <Line endX="-93.53553771972656" endY="235.55271911621094" layoutX="476.0" layoutY="-56.0" startX="-92.24264526367188" startY="-217.7462921142578" stroke="#e0e0e0" />
+            <Line endX="-90.94975280761719" endY="176.54660034179688" layoutX="476.0" layoutY="-56.0" startX="-92.24264526367188" startY="-217.7462921142578" stroke="#e0e0e0" />
             <VBox prefHeight="550.0" prefWidth="823.0" spacing="10.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label prefHeight="46.0" prefWidth="227.0" text="Mails :" textFill="#9a9696" wrapText="true" VBox.vgrow="ALWAYS">
@@ -109,15 +155,49 @@
                         <Font name="Impact" size="20.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="ListMail" prefHeight="448.0" prefWidth="298.0">
+                  <ListView fx:id="ListMail" editable="true" prefHeight="448.0" prefWidth="298.0">
                      <styleClass>
                         <String fx:value="list-cell" />
                         <String fx:value="list-view" />
                      </styleClass>
                   </ListView>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="205.0" spacing="30.0">
+                     <children>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#ajoutMail" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #A5D6A7;" text="Ajouter" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@../Assets/Plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerMail" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="29.0">
+                                 <image>
+                                    <Image url="@../Assets/Minus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
-            <Line endX="-97.12132263183594" endY="520.87255859375" layoutX="724.0" layoutY="-56.0" startX="-97.41421508789062" startY="74.57966613769531" stroke="#e0e0e0" />
+            <Line endX="-97.41450500488281" endY="476.87255859375" layoutX="724.0" layoutY="-56.0" startX="-97.41421508789062" startY="74.57966613769531" stroke="#e0e0e0" />
             <VBox prefHeight="550.0" prefWidth="798.0" spacing="10.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label prefHeight="48.0" prefWidth="250.0" text="Sites Web :" textFill="#9a9696" wrapText="true" VBox.vgrow="ALWAYS">
@@ -125,12 +205,46 @@
                         <Font name="Impact" size="20.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="ListSiteWeb" prefHeight="445.0" prefWidth="275.0">
+                  <ListView fx:id="ListSiteWeb" editable="true" prefHeight="445.0" prefWidth="275.0">
                      <styleClass>
                         <String fx:value="list-cell" />
                         <String fx:value="list-view" />
                      </styleClass>
                   </ListView>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="205.0" spacing="30.0">
+                     <children>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#ajoutSiteW" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #A5D6A7;" text="Ajouter" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@../Assets/Plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#supprimerSiteW" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #FFAB91;;" styleClass="modifier" text="Supprimer" textFill="#ffffff00">
+                           <font>
+                              <Font name="Impact" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="29.0">
+                                 <image>
+                                    <Image url="@../Assets/Minus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
          </children>
@@ -138,13 +252,5 @@
             <Insets bottom="10.0" left="10.0" right="10.0" />
          </VBox.margin>
       </HBox>
-      <JFXButton focusTraversable="false" onAction="#modifier" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #A5D6A7;" styleClass="hover-border-button2" text="Modifier" textFill="WHITE">
-         <font>
-            <Font name="Impact" size="19.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="15.0" />
-         </VBox.margin>
-      </JFXButton>
    </children>
 </VBox>

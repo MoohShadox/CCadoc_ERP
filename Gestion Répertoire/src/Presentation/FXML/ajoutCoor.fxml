@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="610.0" spacing="30.0" style="-fx-background-color: white; -fx-border-width: 5px 5px 5px 5px; -fx-border-color: #635e5e;" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller.ajoutCoorController">
+   <children>
+      <Pane prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: FFC619;">
+         <children>
+            <Label fx:id="titre" layoutX="62.0" layoutY="1.0" prefHeight="35.0" prefWidth="340.0" text="Créer un" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="14.0" layoutY="5.0">
+               <image>
+                  <Image url="@../Assets/Logo.gif" />
+               </image>
+            </ImageView>
+            <HBox layoutX="508.0" prefHeight="36.0" prefWidth="92.0">
+               <children>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#iconify" prefHeight="36.0" prefWidth="44.0" ripplerFill="#7c7979" styleClass="hover-CloseButton" stylesheets="@../CSS/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../Assets/Line'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" focusTraversable="false" onAction="#fermerFenetre" prefHeight="36.0" prefWidth="50.0" ripplerFill="#7c7979" styleClass="hover-CloseButtonCroix" stylesheets="@../CSS/Style.css" textFill="TRANSPARENT" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@../Assets/close'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="28.0" />
+         </VBox.margin>
+      </Pane>
+      <JFXTextField fx:id="champ1" focusColor="#5b5851" focusTraversable="false" labelFloat="true" promptText="Adresse Mail" styleClass="text-field" unFocusColor="#e0e0e0">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </JFXTextField>
+      <Pane>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+         <children>
+            <JFXComboBox fx:id="typeTel" editable="true" focusColor="#5b5851" focusTraversable="false" layoutY="-1.0" prefHeight="35.0" prefWidth="540.0" promptText="Type " styleClass="jfx-combo-box" unFocusColor="#e0e0e0" visible="false" />
+            <JFXTextField fx:id="champ2" focusColor="#5b5851" focusTraversable="false" labelFloat="true" prefHeight="28.0" prefWidth="540.0" promptText="Nom Du Mail" styleClass="text-field" unFocusColor="#e0e0e0">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="champ3" focusColor="#5b5851" focusTraversable="false" labelFloat="true" layoutX="40.0" layoutY="77.0" promptText="Type " styleClass="text-field" unFocusColor="#e0e0e0">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </JFXTextField>
+      <JFXButton fx:id="valider" onAction="#valider" style="-fx-background-color: #A5D6A7;" styleClass="valider" text="Valider Et Fermer" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</VBox>
