@@ -13,6 +13,13 @@ import java.util.HashMap;
 public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     private String url, description;
 
+    public SiteWeb() {}
+
+    public SiteWeb(String url, String description) {
+        this.url = url;
+        this.description = description;
+    }
+
     public String getUrl() {
         return url;
     }
@@ -76,14 +83,12 @@ public class SiteWeb implements DAOAble<SiteWeb>, Descriptible<SiteWeb> {
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<SiteWeb> DSW = new DAOSiteWeb(new SiteWeb());
         SiteWeb SW= DSW.recuperer(ref);
-        if(!SW.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
-            switch (attribut){
+        switch (attribut){
                 case "DESCRIPTION_URL":SW.description=nouvelle_valeur;
                     break;
                 case "URL":SW.url=nouvelle_valeur;
                     break;
             }
-        }
         DSW.mettre_a_jour(SW,ref);
     }
 

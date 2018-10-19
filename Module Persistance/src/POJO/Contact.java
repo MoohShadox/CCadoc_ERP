@@ -1,5 +1,6 @@
 package POJO;
 
+import DAO.*;
 import DAO.Modele_Contact;
 import Exceptions.BuildingException;
 import Exceptions.NonExistantDansLaBDD;
@@ -160,7 +161,17 @@ public class Contact implements DAOAble<Contact>,Destination, Visualisable, Desc
 
     @Override
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
-
+        DAO<Contact> DC=new DAOContact(new Contact());
+        Contact C=DC.recuperer(ref);
+        switch (attribut){
+            case "DENOMINATION":C.denomnation=nouvelle_valeur;
+                break;
+            case "ADRESSE":C.adresse=nouvelle_valeur;
+                break;
+            case "TYPE":C.type = nouvelle_valeur;
+                break;
+        }
+        DC.mettre_a_jour(C,ref);
     }
 
     @Override
