@@ -14,7 +14,14 @@ import java.util.HashMap;
 
 public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     private String numero;
-    private boolean telfax;
+    private String telfax;
+
+    public TelFax() {}
+
+    public TelFax(String numero, String telfax) {
+        this.numero = numero;
+        this.telfax = telfax;
+    }
 
     public String getNumero() {
         return numero;
@@ -24,11 +31,11 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
         this.numero = numero;
     }
 
-    public boolean isTelfax() {
+    public String getTelfax() {
         return telfax;
     }
 
-    public void setTelfax(boolean telfax) {
+    public void setTelfax(String telfax) {
         this.telfax = telfax;
     }
 
@@ -71,7 +78,7 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
         if(H.containsKey("NUMERO"))
             TF.numero = H.get("NUMERO");
         if(H.containsKey("TELFAX"))
-            TF.telfax = Boolean.valueOf(H.get("TELFAX"));
+            TF.telfax =H.get("TELFAX");
         return TF;
     }
 
@@ -79,14 +86,12 @@ public class TelFax implements DAOAble<TelFax>, Descriptible<TelFax> {
     public void Maj_BDD(String attribut, String nouvelle_valeur, String ref) throws SQLException, IllegalAccessException, NonExistantDansLaBDD, BuildingException {
         DAO<TelFax> DTF = new DAOTelFax(new TelFax());
         TelFax TF= DTF.recuperer(ref);
-        if(!TF.getRepositoryAttributs().get(attribut).equalsIgnoreCase(nouvelle_valeur)){
-            switch (attribut){
+        switch (attribut){
                 case "NUMERO":TF.numero=nouvelle_valeur;
                     break;
-                case "TELFAX":TF.telfax=Boolean.valueOf(nouvelle_valeur);
+                case "TELFAX":TF.telfax=nouvelle_valeur;
                     break;
             }
-        }
         DTF.mettre_a_jour(TF,ref);
     }
 
